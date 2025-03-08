@@ -87,7 +87,7 @@ body {
 }
 
 [class*=__container] {
-  max-inline-size: 1310px; /* = 1280 + 15 + 15 */
+  max-inline-size: 1410px; /* = 1280 + 15 + 15 */
   margin-inline: auto;
   padding-inline: 15px;
 }/*# sourceMappingURL=style.css.map */
