@@ -1,7 +1,6 @@
-@charset "UTF-8";
 /* @use "reset"; */
 /* @use "components"; */
-/* ==========ОБНУЛЕНИЕ============= */
+/* ==========RESET============= */
 *,
 *::before,
 *::after {
@@ -93,5 +92,5 @@ body {
 }
 
 header {
-  color: rgb(220, 38, 38);
+  color: rgb(208, 194, 44);
 }/*# sourceMappingURL=style.css.map */
