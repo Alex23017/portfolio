@@ -74,6 +74,62 @@ body {
 }
 
 /* ====================================================== */
+/* Button  */
+.button {
+  border-radius: 8px;
+  background-color: #9333ea;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  padding-inline: 40px;
+  padding-block: 16px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background-color: #7924c8;
+}
+
+/* ======================================= */
+.button--min {
+  font-size: 16px;
+  padding-inline: 28px;
+  padding-block: 12px;
+  line-height: 1.5;
+} 
+/* ===================================== */
+.button--transparent {
+  background-color: transparent;
+}
+
+.button--transparent:hover {
+  background-color: #9333ea;
+}
+
+/* ======================================= */
+.button--white-border {
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding-block: 14px;
+}
+
+.button--white-border:hover {
+  background-color: #9333ea;
+  border: 2px solid #9333ea;
+}
+
+/* ======================================= */
+.menu__link:hover {
+  color: #9333ea;
+}
+
+.header__link-logo:hover {
+  color: #9333ea;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -99,10 +155,14 @@ body {
   flex-grow: 1;
 }
 
+.header {
+  padding-block: 24px;
+}
+
 .header__body {
   padding: 24px;
-  -moz-column-gap: 38px;
-       column-gap: 38px;
+  -moz-column-gap: 46px;
+       column-gap: 46px;
   row-gap: 5px;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.05);
@@ -117,6 +177,24 @@ body {
   font-size: 32px;
   font-weight: 700;
   line-height: 1.1;
+  transition: color 0.3s;
+}
+
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  row-gap: 5px;
+}
+
+.menu__link {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  transition: all 0.3s;
 }
 
 .actions-header {
@@ -125,4 +203,26 @@ body {
   align-items: center;
   flex-wrap: wrap;
   flex-wrap: wrap;
-}/*# sourceMappingURL=style.css.map */
+}
+
+@media (max-width: 991.98px) {
+  .header {
+    padding-block: 15px;
+  }
+  .header__body {
+    padding: 15px;
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+  }
+  .menu__list {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .actions-header {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  .actions-header__button {
+    padding-inline: 15px;
+  }
+} /*# sourceMappingURL=style.css.map */

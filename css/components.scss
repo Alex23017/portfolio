@@ -1,4 +1,6 @@
+
 /* Button  */
+
 .button {
   border-radius: 8px;
   background-color: #9333ea;
@@ -12,21 +14,26 @@
   text-align: center;
   transition: all 0.3s;
 }
-
 .button:hover {
   background-color: #7924c8;
 }
 
 /* ======================================= */
+
 .button--min {
   font-size: 16px;
   padding-inline: 28px;
   padding-block: 12px;
   line-height: 1.5;
-} 
+}/*# sourceMappingURL=components.css.map */
+
+
 /* ===================================== */
+
+
 .button--transparent {
   background-color: transparent;
+
 }
 
 .button--transparent:hover {
@@ -34,6 +41,8 @@
 }
 
 /* ======================================= */
+
+
 .button--white-border {
   background-color: transparent;
   border: 2px solid #fff;
@@ -45,11 +54,18 @@
   border: 2px solid #9333ea;
 }
 
+
 /* ======================================= */
+
 .menu__link:hover {
   color: #9333ea;
 }
 
 .header__link-logo:hover {
   color: #9333ea;
-}/*# sourceMappingURL=components.css.map */
+}
+
+
+
+
+
