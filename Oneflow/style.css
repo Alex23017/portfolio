@@ -353,9 +353,24 @@ body {
     font-size: 18px;
   }
 }
-@media (max-width: 439.98px) {
-  .menu_list {
+@media (max-width: 540.98px) {
+  .nav__menu {
+    left: -50%;
     display: none;
+  }
+  .open-menu .nav__menu,
+  .menu_list,
+  .menu__items {
+    display: grid;
+    padding: 10px;
+    margin: auto;
+    row-gap: 10px;
+    transition: 0.3s;
+  }
+  .open-menu .nav__menu {
+    background-color: rgba(255, 208, 99, 0.2);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
   }
   .menu__bottums {
     padding-block-start: 10px;
@@ -368,13 +383,47 @@ body {
   .header__body-logo {
     flex: 1 1 auto;
   }
-  .icon-menu,
+  .menu__bottums {
+    padding: 10px;
+  }
+  .icon-menu {
+    position: relative;
+    background-color: black;
+    width: 20px;
+    height: 3px;
+  }
+  .icon__body {
+    padding-inline-start: 20px;
+  }
   .icon-menu span::before,
   .icon-menu span::after {
     content: "";
     background-color: black;
-    inline-size: 20px;
-    block-size: 3px;
+    width: 20px;
+    height: 3px;
+    position: absolute;
     right: 0;
+  }
+  .icon-menu span::before {
+    top: 8px;
+  }
+  .icon-menu span::after {
+    top: -8px;
+  }
+  .icon-menu span {
+    transform: scale(0.8);
+    transition: all 0.3s;
+  }
+  .open-menu .icon-menu span::after {
+    transform: scale(0.8) rotate(90deg);
+    transition: all 0.3s;
+  }
+  .open-menu .icon-menu span::before {
+    transform: scale(0.8) rotate(90deg);
+    transition: all 0.3s;
+  }
+  .open-menu .icon-menu {
+    transform: scale(0.8) rotate(90deg);
+    transition: all 0.3s;
   }
 }/*# sourceMappingURL=style.css.map */
