@@ -12,19 +12,25 @@
 }
 
 [class*="__container"] {
-	max-inline-size: 1470px; /* + 15 + 15px */
+	max-inline-size: 1410px; /* + 15 + 15px */
 	margin-inline: auto;
 	padding-inline: 15px;
+}
+
+body {
+background-color: #013A4C;;
 }
 
 
 // /HEADER==========================
 
 .header {
+    background-color: #FFFFFF;
 }
 
 
 .header__container {
+
 
 }
 
@@ -142,6 +148,7 @@
 // ==================SECTION__1===========================
 
 .wonders {
+    background-color: #FFFFFF;
 
 
 }
@@ -612,7 +619,7 @@
 
 
  .making__container {
-    background-color: #013A4C;
+
     min-inline-size: 100%;
     block-size: auto;
     z-index: 50;
@@ -636,6 +643,7 @@
         gap: 32px;
         padding-block-end: 80px;
         flex-wrap: wrap;
+        background-color: #013A4C;
 
 }
 
@@ -655,20 +663,31 @@
 // ====================.section__3===================================
 
 .section__3 {
-    background-color: #013A4C;
+    display: flex;
+    justify-content: center;
+
 }
 
 .turn__container {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
 
 
 }
 
 
 .turn__body {
-    justify-content: space-between;
     display: flex;
-    position: relative;
-    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    gap: 14px;
+    width: 100%;
+    height: 100%;
+    // flex-wrap: wrap;
+
+
    
 
 
@@ -676,9 +695,9 @@
 .items {
 }
 .items__body {
-    max-inline-size: 624px;
-    max-block-size: 507px;
     padding-inline-start: 144px;
+    flex-wrap: wrap;
+
     
 
 
@@ -692,6 +711,8 @@
     letter-spacing: 0.4px;
     color: #F2DCE4;
     padding-block-end: 38px;
+    max-width: 405px;
+    flex-wrap: wrap;
 
 }
 .item__text {
@@ -705,17 +726,17 @@
 
 }
 .items__body-img  {
-    max-width: 100%; /* Чтобы изображение не выходило за пределы родителя */
-    max-height: 100%; /* Чтобы изображение сохраняло пропорции */
-    object-fit: contain; /* Если изображение должно сохранять пропорции */
+    max-width: 100%; 
+    max-height: 100%; 
     position: relative;
     inset-block-start: -120px;
     z-index: 1;
     padding-inline-start: 14px;
     padding-inline-end: 157px;
+
 }
-.img__turn {
-}
+
+
 .item__button {
     display: inline;
     background-color: #FFD063;
@@ -739,12 +760,18 @@
 
 // SECTION__4=================================
 
+
+.section__4 {
+
+}
+
 .collab__container {
     display: flex;
     justify-content: center;
     background-color: #013A4C;
-    min-inline-size: 100%;
-    // padding-block-start: 10px;
+    padding-block-start: 160px;
+
+
 
 }
 .collab__body {
@@ -760,6 +787,17 @@
     padding-block-start: 31px;
     padding-block-end: 33px;
     padding-block-end: 72px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 110px;
+}
+
+.item__container-img {
+    min-width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
 
 }
 
@@ -779,29 +817,22 @@
 }
 
 
-.collab__items-img:not(:first-child) {
-    padding-inline-start: 110px;
-}
 
 
-.item__container-img {
-    min-width: 100%;
-    display: flex;
+
+
+.body__containers-img {
     margin: 0;
     padding: 0;
-    justify-content: space-between;
-}
 
-.body__container-img {
-    margin: 0;
-    padding: 0;
-}
 
-.body__container-img img {
-    padding-top: 30px; 
 
 }
 
+.body__containers-img img {
+    padding-top: 30px; /* Отступ сверху для картинки */
+    width: 100%;  /* Картинка будет уменьшаться */
+}
 
 .items__body__text {
     display: flex;
@@ -889,11 +920,9 @@
 // SECTION__5==========================
 
 .section__5 {
-    background-color: #013A4C; 
-    padding-top: 128px; 
-    height: 177vh; 
-    width: 100%; 
-  
+    display: flex; /* Это может предотвратить схлопывание */
+    flex-direction: column;
+    overflow: hidden;
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -903,9 +932,46 @@
 .press__container {
     background: url("/Rectangle (9).svg") 50% 50% no-repeat; /* Фоновое изображение */
     background-size: cover; 
-    width: 100%;
-    height: 100%; 
+    width: 100%;    /* Картинка будет растягиваться на 100% ширины контейнера */
+    height: 2432px;
+    max-height: auto;
+    margin: 0px;
+
+
     
+
+}
+
+
+
+.section__play {
+    display: flex;
+    justify-content: center;
+    padding-block-start: 128px;
+}
+
+.play__container  {
+
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+    box-sizing: content-box;
+    
+}
+
+.play__container img {
+    min-width: 100%;    /* Картинка растягивается по ширине контейнера */
+    height: 100%;   /* Картинка растягивается по высоте контейнера */
+    object-fit: cover; /* Картинка будет растягиваться, сохраняя пропорции, без искажения */
+}
+
+
+
+.press__items-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -914,17 +980,9 @@
     display: flex;
     justify-content: center;
     padding-inline: 144px;
-    min-width: 100%
 }
 
-.press__items-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-
-}
 
 .press__body-header {
     font-family: Roboto;
@@ -935,20 +993,26 @@
     text-align: center;
     color: #013A4C;
     text-align: center;
-    width: 800px;
+    max-width: 800px;
     padding-block-end: 150px;
     padding-block-start: 122px;
+    padding-inline: 15px;
+    flex-wrap: wrap;
 
 
 }
 
+.title img {
+    max-width: 100%;
+
+}
 
 
 .body-title {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding-block-end: 90px;
+    padding-block-end: 126px;
 }
 
 
@@ -986,6 +1050,7 @@
 .press__body-title {
     display: flex;
     align-items: end;
+    padding-inline-end: 100px;
     
 }
 .press__body-title-3 {
@@ -1010,8 +1075,306 @@
 
 }
 
+.press__items-title-3 {
+    padding-block-end: 20px;
+
+}
+
 .press__bottun  {
     display: inline-block;
     background-color: #013A4C;
     border-radius: 4px;
+}
+
+// SECTION__6 ==========================
+
+
+.section__6 {
+    display: flex;
+    justify-content: center;
+
+    
+
+}
+.believe__container {
+    display: flex;
+    margin: 0px;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+
+}
+.believe__body {
+
+
+}
+    
+.believe__img {
+
+}
+
+.believe__container {
+    position: relative;
+    z-index: 2;
+
+}
+
+
+
+.believe__items {
+    position: absolute;
+    z-index: 20;
+    inset-inline-start: 144px;
+    inset-block-start: 298px;
+    flex-wrap: wrap;
+    min-width: 100%;
+    width: 50%;
+    
+
+
+}
+.believe__img img {
+    width: 100%;    /* Картинка будет растягиваться на 100% ширины контейнера */
+    height: auto;   /* Высота будет автоматически регулироваться, чтобы сохранить пропорции */
+}
+.items__believe {
+}
+.items__believe-tittle {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 73px;
+    line-height: 78px;
+    letter-spacing: 2px;
+    color: #F2DCE4;
+    padding-block-end: 31px;
+}
+.items__believe-text {
+    font-family: Work Sans;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    padding-block-end: 25px;
+    max-width: 470px;
+    
+}
+.items__believe-button {
+    display: inline-block;
+    background-color:#FFD063 ;
+    border-radius: 4px;
+    padding-inline: 17px;
+    padding-block: 11px;
+
+
+}
+
+
+// SECTION__JUST======================
+
+.section__just {
+ 
+}
+.just__container{
+    overflow: hidden;
+    position: relative;
+    background-color: #FFFFFF;
+
+
+}
+.just__items-title {
+    padding-block-start: 66px ;
+    padding-inline-start: 144px;
+
+
+}
+.just__items {
+    display: flex;
+    gap: 16px;
+    position: relative;
+    z-index: 20;
+    left: 144px;
+
+
+
+}
+
+.item__just-text {
+    display: flex;
+    padding-block-end: 65px;
+    padding-inline-start: 33px;
+
+
+}
+
+.item__just-text img {
+    width: 48px;
+    height: 48px;
+    padding-inline-end: 16px ;
+}
+
+.item__just {
+}
+
+.item__just-title {
+    padding-block-end: 18px;
+    padding-inline-start: 33px;
+    padding-block-start: 66px;
+    padding-inline-end: 33px;
+
+}
+
+.item__just-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 1px solid #D6DFE2;
+    width: 375px;
+    max-height: 100%;
+
+}
+
+
+.just__items-title {
+    padding-block-start: 127px;
+    padding-block-end: 57px;
+}
+
+
+.just__items-title  p {
+    font-family: Work Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #013A4C;
+
+
+}
+
+.just__items-title h2 {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 54px;
+    letter-spacing: 0.4px;
+    color: #013A4C;
+
+}
+
+
+.item__just-link {
+    padding-inline-start: 33px;
+ 
+
+
+}
+
+.item__just-link a {
+    font-family: Work Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: #89285B;
+
+}
+.item__just-text p {
+    font-family: Work Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #013A4C;
+    max-width: 150px;
+}
+
+
+
+// .section__seamless ==========================
+
+.section__seamless {
+    display: flex;
+    justify-content: center;
+
+}
+.seamless__container {
+    background-color: #FFFFFF;
+    padding-block-start: 315px;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding-block-start: 315px;
+}
+.seamless__body {
+    display: flex;
+}
+.body__seamless {
+}
+.body__seamless-items {
+    padding-inline-start: 144px;
+}
+.seamless__items-title {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: 0.4px;
+    color: #013A4C;
+
+}
+.seamless__items-text {
+    font-family: Work Sans;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #013A4C;
+    padding-block-start: 30px;
+    padding-block-end: 19px;
+
+}
+.seamless__items-button {
+    display: inline-block;
+    padding-inline: 21px;
+    padding-block: 15px;
+    background-color: #FFD063;
+    border-radius: 4px;
+}
+.seamless__items-link {
+    font-family: Work Sans;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #013A4C;
+
+}
+.body__seamless-column--center{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -86px;
+
+
+}
+
+.body__seamless-column {
+    display: flex;
+    flex-direction: column;
+    gap: 124px;
+}
+.column__seamless-img {
+}
+
+.seamless__column-body {
+position: relative;
+    display: flex;
+    gap: 124px;
+    padding-inline-start: 175px;
+    padding-inline-end: 182px;
+    top: -50px;
+    justify-content: space-evenly;
 }
