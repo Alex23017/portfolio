@@ -1,0 +1,88 @@
+@use "reset";
+@use "sass:math";
+
+body {
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    font-weight: 400;
+
+}
+
+h2 {
+    font-size: 3rem;
+}
+p { 
+    font-size: 1.3125rem;
+}
+
+// TO %
+@function prc($pxOne, $pxTwo) {
+    $result: math.div($pxOne, $pxTwo) * 100%;
+    @return $result;
+}
+// REM///////
+@function rem($px) {
+    $result: math.div($px, 16) + rem;
+    @return $result;
+}
+// EM///////
+@function em($px) {
+    $result: math.div($px, 16) + em;
+    @return $result;
+}
+
+
+// ====================STYLE - HEADER__CONTAINER===================================
+.header__container { 
+    display: flex;
+    padding-block: rem(32);
+    padding-inline: rem(110);
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .header__items {
+    display: flex;
+    column-gap: em(24);
+    align-items: center;
+}
+    .header__link {
+    white-space: nowrap;
+}
+    .header__button {
+    white-space: nowrap;
+    
+    border-radius: 14px;
+    background-color: #0075FF;
+    color: #ffff;
+
+    padding-inline: em(24);
+    padding-block-start: em(17);
+    padding-block-end: em(19);
+}
+
+    .header__img {
+        display: flex;
+        align-items: center;
+}
+
+    .header__img img {
+}
+
+    }
+
+
+.nav__items {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    padding-inline: em(48);
+
+    .nav__list {
+    display: flex;
+    column-gap: em(22);
+
+}
+    .nav__link {
+    font-size: rem(18);
+}
+    }
+

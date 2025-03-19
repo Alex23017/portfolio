@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "2",
+			"path": "."
+		},
+		{
+			"name": "Oneflow",
+			"path": "../Oneflow"
+		},
+		{
+			"name": "test",
+			"path": "../test"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Oneflow"
+	}
+}
