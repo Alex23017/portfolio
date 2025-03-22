@@ -569,7 +569,7 @@ p {
   gap: 12.5em;
 }
 
-.small__home {
+.page__home {
   display: flex;
   gap: 5em;
 }
@@ -634,6 +634,11 @@ p {
   letter-spacing: 0%;
 }
 
+.what__num-num span {
+  color: #0075FF;
+  font-size: 3.375rem;
+}
+
 .what__button {
   display: inline-block;
 }
@@ -657,7 +662,7 @@ p {
 
 .what__column-num {
   display: grid;
-  grid-template-columns: repeat(3, 100px auto);
+  grid-template-columns: repeat(3, 1fr);
   padding-block-end: 3em;
 }
 
@@ -670,4 +675,101 @@ p {
 .home-items1 img {
   width: 100%;
   min-width: 350px;
+}
+
+.small__article {
+  display: flex;
+  flex-direction: column;
+}
+
+.article__items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.article__text {
+  padding-block-start: 0.5625em;
+  padding-block-end: 0.25em;
+}
+
+.article__body-items2 {
+  display: flex;
+  gap: 1.75em;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.article__items-button {
+  align-self: center;
+}
+
+.article__body-items3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.75em;
+  row-gap: 350px;
+}
+
+.article__body-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.article__items3-img img {
+  width: 100%;
+  min-width: 350px;
+  min-height: 400px;
+}
+
+.article__items3-title {
+  padding-inline: 3.0625rem;
+  position: absolute;
+  z-index: 2;
+  background-color: #fff;
+  bottom: -74%;
+}
+
+.article__items3-title h3 {
+  max-width: 410px;
+}
+
+.article__items3-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 34.01px;
+  letter-spacing: 0%;
+  border: 1px solid #EFF0F6;
+  border-radius: 24px;
+  padding-block-start: 3.25rem;
+}
+
+.article__items3-text {
+  padding-block-start: 1.0625em;
+  padding-block-end: 0.625em;
+  max-width: 435px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30.01px;
+  letter-spacing: 0%;
+}
+
+.article__body-title {
+  padding-inline: 3.0625em;
+}
+
+.article__items3-data span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+.article__items3-data {
+  padding-block-end: 3.0625rem;
 }/*# sourceMappingURL=style.css.map */
