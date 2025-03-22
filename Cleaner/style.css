@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* @use "reset"; */
 /* @use "components"; */
 /* ==========RESET============= */
@@ -255,4 +256,207 @@ p {
 .quality__items-img img {
   width: 100%;
   min-width: 350px;
+}
+
+.body__call-num {
+  width: 0;
+  overflow: hidden;
+  animation: typing 2s steps(30) forwards, blink 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.section__3 {
+  padding-block-start: 15rem;
+}
+
+.works__body-items1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+.works__body-items1 .items1__works-title {
+  padding-block-end: 1.3125em;
+}
+.works__body-items1 .items1__works-text {
+  padding-block-end: 3.625em;
+  width: 51%;
+}
+
+.works__body-items2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  justify-content: center;
+  text-align: center;
+  padding-block-end: 3.5rem;
+  -moz-column-gap: 2.625em;
+       column-gap: 2.625em;
+  row-gap: 2.625em;
+}
+.works__body-items2 .items2__work-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.works__body-items2 .items2__works-title {
+  padding-block-start: 2.4375rem;
+  padding-block-end: 1rem;
+}
+.works__body-items3 {
+  display: flex;
+  justify-content: center;
+}
+.works__body-items3 .items3__works-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.75em;
+}
+.button2 {
+  border: 1px solid #EFF0F6;
+  padding-inline: 38px;
+  padding-block: 26px;
+  border-radius: 14px;
+  font-size: 1.125rem;
+  white-space: nowrap;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  padding-block: 15rem;
+  padding-inline: 6.875rem;
+}
+
+.line span {
+  display: block;
+  max-width: 1220px;
+  width: 100%;
+  height: 1px;
+  background-color: #DCDDEB;
+  color: #DCDDEB;
+}
+
+.page__comparison {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comparison__body-items1 {
+  text-align: center;
+  width: 47.94%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.comparison__body-items1 .comparison__items1-text {
+  width: 115%;
+  padding-block-start: 0.8125em;
+  padding-block-end: 2em;
+}
+
+.comparison__body-items2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  flex-wrap: wrap;
+  align-items: center;
+  -moz-column-gap: 5.25em;
+       column-gap: 5.25em;
+  width: 59%;
+}
+.comparison__body-items2 .comparison__body-column {
+  display: flex;
+  align-items: center;
+}
+.comparison__body-items2 .comparison__item-img {
+  padding-inline-end: 10px;
+}
+.comparison__body-items2 .comparison__item-img img {
+  width: 72px;
+}
+.comparison__body-items2 .comparison__item-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.comparison__body-items3 {
+  display: flex;
+  justify-content: center;
+  margin-block-start: 2.5rem;
+  width: 100%; /* Контейнер займет всю ширину экрана */
+  aspect-ratio: 16/9;
+}
+
+.utube {
+  width: 79.85%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 40px;
+}
+
+.page__take {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.take__body-items1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.items1__take-title {
+  max-width: 29.6875em;
+}
+
+.items3__take-button2 {
+  max-width: 214px;
+  max-height: 73px;
+}
+
+.take__body-items2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  -moz-column-gap: 1.75em;
+       column-gap: 1.75em;
+  row-gap: 1.5em;
+  padding-block-start: 3em;
+}
+
+.items2__take-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #EFF0F6;
+  border-radius: 16px;
+}
+
+.items2__take-img {
+  padding-block-start: 3em;
+}
+
+.items2__take-title {
+  padding-block-start: 1.5em;
+}
+
+.items2__take-text {
+  padding-inline: 2.375em;
+  padding-block-end: 1.8125em;
+  padding-block-start: 0.8125em;
 }/*# sourceMappingURL=style.css.map */
