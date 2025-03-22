@@ -94,4 +94,10 @@ body {
   max-inline-size: 1440px; /* = 1268 + 15 + 15 */
   padding-inline: 86px;
   margin-inline: auto;
+}
+
+[class*=small__] {
+  max-inline-size: 1440px; /* = 1268 + 15 + 15 */
+  padding-inline: 110px;
+  margin-inline: auto;
 }/*# sourceMappingURL=reset.css.map */
