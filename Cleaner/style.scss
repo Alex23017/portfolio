@@ -998,3 +998,17 @@ margin-top: -50px;
     column-gap: em(33);
 
 }
+
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px) scale(0.8);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    will-change: opacity, transform; /* Оптимизация для плавной анимации */
+}
+
+/* Добавляем класс при появлении элемента */
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
