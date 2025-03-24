@@ -1,17 +1,22 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const fadeElements = document.querySelectorAll(".fade-in");
+// Ищем все элементы с классом .fade-in
+const fadeInElements = document.querySelectorAll('.fade-in');
 
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-                observer.unobserve(entry.target); // Остановить наблюдение после появления
-            }
-        });
-    }, { threshold: 0.1 }); // Элемент будет виден хотя бы на 10%
-
-    fadeElements.forEach(el => {
-        el.classList.remove("visible"); // Удаляем класс, если он случайно был добавлен
-        observer.observe(el);
+// Создаем новый IntersectionObserver
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Если элемент виден, добавляем класс "visible"
+            entry.target.classList.add('visible');
+            entry.target.classList.remove('hidden');
+        } else {
+            // Если элемент не виден, добавляем класс "hidden"
+            entry.target.classList.remove('visible');
+            entry.target.classList.add('hidden');
+        }
     });
+}, { threshold: 0.1 });  // Устанавливаем порог, например, 10% элемента должно быть видно
+
+// Наблюдаем за всеми элементами с классом .fade-in
+fadeInElements.forEach(element => {
+    observer.observe(element);
 });

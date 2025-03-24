@@ -381,9 +381,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.works__body-items2 .items2__work-column:hover {
-  animation: jump 1s ease-in-out infinite;
+  animation: jump 3s ease-in-out infinite;
 }
 .works__body-items2 .items2__works-title {
   padding-block-start: 2.4375rem;
@@ -539,9 +537,6 @@ p {
   text-align: center;
   border: 1px solid #EFF0F6;
   border-radius: 16px;
-}
-.items2__take-column:hover {
-  animation: jump 1s ease-in-out infinite;
 }
 
 .items2__take-img {
@@ -952,7 +947,7 @@ p {
 
 .fade-in {
   opacity: 0;
-  transform: translateX(100%) scale(0.8);
+  transform: translateX(50%) scale(0.8);
   transition: opacity 1s ease-out, transform 1s ease-out;
   will-change: opacity, transform; /* Оптимизация для плавной анимации */
 }
