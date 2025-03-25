@@ -967,13 +967,11 @@ background-color: #013A4C;;
 
 
 .press__container {
-    background: url("/Rectangle (9).svg") 50% 50% no-repeat; /* Фоновое изображение */
-    background-size: cover; 
-    width: 100%;    /* Картинка будет растягиваться на 100% ширины контейнера */
-    height: 2432px;
-    max-height: auto;
-    margin: 0px;
-
+    background: url("./img/Rectangle\ \(9\).svg") 50% 50% no-repeat; 
+    background-size: cover;  
+    width: 100%;  
+    height: 2432px;  
+    margin: 0px;  
 }
 
 

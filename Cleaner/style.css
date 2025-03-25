@@ -106,6 +106,7 @@ body {
 body {
   font-family: "Roboto", "Open Sans", sans-serif;
   font-weight: 400;
+  overflow-y: auto;
 }
 
 h2 {
@@ -116,6 +117,15 @@ p {
   font-size: 1.3125rem;
 }
 
+.wrapper {
+  position: relative;
+}
+
+.section__1 {
+  display: flex;
+  justify-content: center;
+}
+
 .header__container {
   display: flex;
   padding-block: 2rem;
@@ -123,6 +133,15 @@ p {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  background: rgb(255, 255, 255);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2), 0px 0px 6px rgba(0, 0, 0, 0.1);
+  animation: swing 6s ease-in-out infinite;
 }
 .header__container .header__items {
   display: flex;
@@ -246,6 +265,10 @@ p {
 }
 .number__value:hover {
   text-decoration: underline;
+}
+
+.section__2 {
+  margin-block-start: 7.375em;
 }
 
 .quality__container {
@@ -1162,6 +1185,11 @@ textarea {
     flex: inherit;
     flex-direction: column;
     row-gap: 2.1875em;
+    background-color: fff;
+    position: inherit;
+  }
+  .section__2 {
+    margin: 0;
   }
   .covid__items-title h2 {
     font-size: 2.25rem;

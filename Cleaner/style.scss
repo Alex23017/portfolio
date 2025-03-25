@@ -4,6 +4,7 @@
 body {
     font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 400;
+    overflow-y: auto;
 
 }
 
@@ -22,29 +23,55 @@ p {
 }
 // REM///////
 @function rem($px) {
-    $result: math.div($px, 16) + rem;
-    @return $result;
+    $result: math.div($px, 16);
+    @return #{$result}rem;
 }
 // EM///////
 @function em($px) {
-    $result: math.div($px, 16) + em;
-    @return $result;
+    $result: math.div($px, 16);
+    @return #{$result}em;
 }
 
 
 // ====================STYLE - HEADER__CONTAINER===================================
 
+.wrapper {
+    position: relative;
+
+
+    
+}
+
 .section__1 {
+    display: flex;
+    justify-content: center;
+ 
 
 }
 
 .header__container { 
     display: flex;
+    
+    
     padding-block: rem(32);
     padding-inline: rem(110);
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+
+    position: fixed;
+    z-index: 50;
+    top: 0;
+
+    background: rgb(255, 255, 255); 
+    backdrop-filter: blur(10px); 
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2), 0px 0px 6px rgba(0, 0, 0, 0.1);
+    
+    animation: swing 6s ease-in-out infinite;
+   
+
+       
 
     .header__items {
     display: flex;
@@ -204,6 +231,7 @@ p {
 
 
 .section__2 {
+    margin-block-start: em(118);
 }
 .quality__container {
     display: flex;
@@ -1380,6 +1408,12 @@ textarea {
     flex: inherit;
     flex-direction: column;
     row-gap: em(35);
+    background-color: fff;
+    position: inherit;
+    
+}
+.section__2 {
+    margin: 0;
 }
 
 .nav__items {
