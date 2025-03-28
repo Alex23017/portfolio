@@ -354,6 +354,7 @@ h3 {
 }
 
 .creators__body-items {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -365,10 +366,35 @@ h3 {
   padding-block-start: 1.25rem;
 }
 
+.creators__items-title {
+  padding-block-start: 1.25rem;
+  padding-block-end: 0.3125rem;
+}
+
 .creators__total-body {
   display: flex;
   -moz-column-gap: 0.625rem;
        column-gap: 0.625rem;
   padding-inline: 1.25rem;
   padding-block-end: 1.25rem;
+  align-items: center;
+}
+
+.creators__total-text-grey {
+  color: var(--card-color-text);
+}
+
+.creators__number-list {
+  padding-block: 0.25rem;
+  padding-inline: 0.625rem;
+  background-color: var(--background-color-number);
+  border-radius: 100%;
+  color: var(--color-number);
+  font-family: var(--font-family-mono);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 1.125rem;
+  left: 1.25rem;
 }/*# sourceMappingURL=nft.style.css.map */

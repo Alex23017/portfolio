@@ -2,9 +2,15 @@
 
 
 --background-color-card:#3b3b3b;
-
 --border-color:#a259ff;
 --background-color-button-cards:#a259ff;
+
+--card-color-text: #858584;
+
+--background-color-number:#2b2b2b;
+--color-number:#858584;
+--font-family-mono: 'Space Mono', Helvetica, sans-serif;
+--font-weight-mono-reg: 400;
 
 
 }

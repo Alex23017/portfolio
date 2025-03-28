@@ -347,6 +347,7 @@ h3 {
 
 }
 .creators__body-items {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -359,12 +360,19 @@ h3 {
     padding-block-start: rem(20);
 }
 .creators__items-title {
+    padding-block-start: rem(20);
+    padding-block-end: rem(5);
 }
 .creators__total-body {
     display: flex;
     column-gap: rem(10);
     padding-inline: rem(20);
     padding-block-end: rem(20);
+    align-items: center;
+}
+.creators__total-text-grey
+{
+    color: var(--card-color-text);
 }
 
 .creators__total-text {
@@ -376,4 +384,18 @@ h3 {
 .text--mono-reg {
 }
 .creators__number-list {
+    padding-block: rem(4);
+    padding-inline: rem(10);
+    background-color: var(--background-color-number);
+    border-radius: 100%;
+    color: var(--color-number);
+    font-family: var(--font-family-mono);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: rem(18);
+    left: rem(20);
+
+
 }
