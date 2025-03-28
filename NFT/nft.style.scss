@@ -42,8 +42,52 @@ h3 {
 
 }
 
+// ==============KEYFRAMES================
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+
+}
+}
+.animation--jump {
+    animation: jump 5s ease-in-out infinite;
+}
+
+.trending__body-card{
+    animation: jump 5s ease-in-out infinite;
+    &:hover {
+        animation: paused;
+    }
+}
+// ==============Hover================
 
 
+.nav__item-button,
+.nav__item,
+.logo,
+.button,
+.button2,
+.creators__body-items,
+.browse__cards-items,
+.discover__card-column {
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+
+
+
+
+
+
+
+
+// ======================================
 
 .text--mono-reg {
     font-family: 'Space Mono', Helvetica, sans-serif;
@@ -100,14 +144,59 @@ h3 {
     align-items: center;
     white-space: nowrap;
     line-height: 36px;
-    
 }
+
+.nav__link {
+    position: relative;
+}
+
+
+.nav__link{
+    &:hover {
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 2px;
+        text-decoration-color: var(--background-color-button-cards);
+        transition: all 0.4s ease-in-out;
+  
+    }
+
+}
+.nav__item-button .nav__link:hover {
+    text-decoration: none; /* Убираем подчеркивание при наведении */
+  }
+
+
+
 .nav__item {
     padding-inline: rem(20);
     padding-block: rem(12);
+    text-shadow: #2b2b2b;
+    
 }
-.nav__link {
+.nav__link,
+.button,
+.button2,
+.trending__card-items-img,
+.creators__items-title,
+.browse__cards-title,
+.discover__card-title,
+.trending__title,
+.creators__title,
+.browse__title,
+.discover__title, 
+.text {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
+.trending__card-img,
+.trending__column-card,
+.creators__items-img,
+.browse__card-icon  {
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
+
+}
+
+
 .nav__item-button {
     display: flex;
     align-items: center;
@@ -116,9 +205,9 @@ h3 {
     padding-inline: rem(30);
     border-radius: 20px;
     white-space: nowrap;
-    
-
 }
+
+
 
 
 // =============SECTION__1 DISCOVER=======================
@@ -331,7 +420,20 @@ h3 {
     align-items: center;
     justify-content: center;
     width: 100%;
+    &:hover {
+        transform: scale(1.05);
+        transition: all 0.1s ease;
+        animation: none;
+        
+    }
+
+
+
+
 }
+
+
+
 .trending__card-img img {
   
     width: 100%;
@@ -360,6 +462,10 @@ h3 {
 
 .trending__card-items-img  {
     max-width: 100%;
+    &:hover {
+        transform: scale(1.1);
+        transition: all 0.1s ease;
+    }
 
 }
 
@@ -453,6 +559,8 @@ h3 {
     align-items: center;
     border-radius: 16px;
     background-color: var(--background-color-card);
+
+ 
     
     
 }
@@ -544,6 +652,7 @@ h3 {
     width: 100%;
     min-width: 150px;
     min-height: 142px;
+    
     
 }
 
@@ -710,3 +819,4 @@ h3 {
 .tablet--none {
 
 }
+

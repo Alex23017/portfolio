@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* @use "reset"; */
 /* @use "components"; */
 /* ==========RESET============= */
@@ -116,6 +117,36 @@ h3 {
   margin-block-start: -0.0625rem;
 }
 
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+.animation--jump {
+  animation: jump 5s ease-in-out infinite;
+}
+
+.trending__body-card {
+  animation: jump 5s ease-in-out infinite;
+}
+.trending__body-card:hover {
+  animation: paused;
+}
+
+.nav__item-button:hover,
+.nav__item:hover,
+.logo:hover,
+.button:hover,
+.button2:hover,
+.creators__body-items:hover,
+.browse__cards-items:hover,
+.discover__card-column:hover {
+  transform: scale(1.1);
+}
+
 .text--mono-reg {
   font-family: "Space Mono", Helvetica, sans-serif;
   font-weight: 400;
@@ -166,9 +197,48 @@ h3 {
   line-height: 36px;
 }
 
+.nav__link {
+  position: relative;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--background-color-button-cards);
+  transition: all 0.4s ease-in-out;
+}
+
+.nav__item-button .nav__link:hover {
+  text-decoration: none; /* Убираем подчеркивание при наведении */
+}
+
 .nav__item {
   padding-inline: 1.25rem;
   padding-block: 0.75rem;
+  text-shadow: #2b2b2b;
+}
+
+.nav__link,
+.button,
+.button2,
+.trending__card-items-img,
+.creators__items-title,
+.browse__cards-title,
+.discover__card-title,
+.trending__title,
+.creators__title,
+.browse__title,
+.discover__title,
+.text {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.trending__card-img,
+.trending__column-card,
+.creators__items-img,
+.browse__card-icon {
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
 }
 
 .nav__item-button {
@@ -349,6 +419,11 @@ h3 {
   justify-content: center;
   width: 100%;
 }
+.trending__card-img:hover {
+  transform: scale(1.05);
+  transition: all 0.1s ease;
+  animation: none;
+}
 
 .trending__card-img img {
   width: 100%;
@@ -375,6 +450,10 @@ h3 {
 
 .trending__card-items-img {
   max-width: 100%;
+}
+.trending__card-items-img:hover {
+  transform: scale(1.1);
+  transition: all 0.1s ease;
 }
 
 .trending__body-footer {
