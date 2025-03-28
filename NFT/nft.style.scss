@@ -94,7 +94,7 @@ h3 {
     display: flex;
     align-items: center;
     gap: rem(12);
-    background-color: #A259FF;
+    background-color: var(--background-color-button-cards);
     padding-inline: rem(30);
     border-radius: 20px;
     white-space: nowrap;
@@ -107,7 +107,7 @@ h3 {
 
 
 .button {
-    background-color: #A259FF;
+    background-color: var(--background-color-button-cards);
     border-radius: 16px;
     column-gap: rem(12);
     display: inline-block;
@@ -276,10 +276,10 @@ h3 {
 
 
 .trending__card-items-img--background {
-    background-color: #A259FF;
     font-size: rem(22);
     padding: 32px 15px;
     border-radius: 16px;
+    background-color: var(--background-color-button-cards);
 
 }
 
@@ -303,3 +303,77 @@ h3 {
     column-gap: rem(12);
 }
 
+// ====================SECTION__ 3 CREATORS =========================
+
+.section__3 {
+    display: flex;
+    justify-content: center;
+}
+.creators__container {
+
+}
+
+.create__body-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: rem(30);
+    row-gap: rem(30);
+
+    }
+
+.creators__body-title {
+    display: flex;
+    padding-block-end: rem(60);
+    justify-content: space-between;
+
+}
+.creators__body-text{
+
+}
+
+
+.creators__title {
+}
+.creators__text {
+}
+.text {
+}
+.creators__body-button {
+    align-self: flex-end;
+    padding-inline: rem(50);
+    padding-block: rem(19);
+    border-radius: 16px;
+    border: 2px solid var(--border-color);
+
+}
+.creators__body-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    background-color: var(--background-color-card);
+    
+    
+}
+.creators__items-img {
+    padding-block-start: rem(20);
+}
+.creators__items-title {
+}
+.creators__total-body {
+    display: flex;
+    column-gap: rem(10);
+    padding-inline: rem(20);
+    padding-block-end: rem(20);
+}
+
+.creators__total-text {
+}
+.creators__total-text-grey {
+}
+.creators__total-number {
+}
+.text--mono-reg {
+}
+.creators__number-list {
+}

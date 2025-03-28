@@ -163,14 +163,14 @@ h3 {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  background-color: #A259FF;
+  background-color: var(--background-color-button-cards);
   padding-inline: 1.875rem;
   border-radius: 20px;
   white-space: nowrap;
 }
 
 .button {
-  background-color: #A259FF;
+  background-color: var(--background-color-button-cards);
   border-radius: 16px;
   -moz-column-gap: 0.75rem;
        column-gap: 0.75rem;
@@ -307,10 +307,10 @@ h3 {
 }
 
 .trending__card-items-img--background {
-  background-color: #A259FF;
   font-size: 1.375rem;
   padding: 32px 15px;
   border-radius: 16px;
+  background-color: var(--background-color-button-cards);
 }
 
 .trending__body-footer {
@@ -324,4 +324,51 @@ h3 {
   display: flex;
   -moz-column-gap: 0.75rem;
        column-gap: 0.75rem;
+}
+
+.section__3 {
+  display: flex;
+  justify-content: center;
+}
+
+.create__body-item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 1.875rem;
+       column-gap: 1.875rem;
+  row-gap: 1.875rem;
+}
+
+.creators__body-title {
+  display: flex;
+  padding-block-end: 3.75rem;
+  justify-content: space-between;
+}
+
+.creators__body-button {
+  align-self: flex-end;
+  padding-inline: 3.125rem;
+  padding-block: 1.1875rem;
+  border-radius: 16px;
+  border: 2px solid var(--border-color);
+}
+
+.creators__body-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  background-color: var(--background-color-card);
+}
+
+.creators__items-img {
+  padding-block-start: 1.25rem;
+}
+
+.creators__total-body {
+  display: flex;
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
+  padding-inline: 1.25rem;
+  padding-block-end: 1.25rem;
 }/*# sourceMappingURL=nft.style.css.map */
