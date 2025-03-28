@@ -127,14 +127,24 @@ h3 {
   font-size: 1.75rem;
 }
 
-.header {
+.header__body {
   padding-inline: 3.125rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-block: 1.25rem;
   vertical-align: baseline;
   -moz-column-gap: 1.875rem;
        column-gap: 1.875rem;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding-inline: 3.125rem;
 }
 
 .logo {
@@ -226,6 +236,7 @@ h3 {
 }
 
 .discover__body-title {
+  flex-direction: column;
   text-transform: capitalize;
 }
 

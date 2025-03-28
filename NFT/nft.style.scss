@@ -58,15 +58,32 @@ h3 {
 
 // ====================HEADER NAV=======================
 
-.header{
+
+
+.header__body{
     padding-inline: rem(50);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-block: rem(20);
     vertical-align: baseline;
     column-gap: rem(30);
-    
+    width: 100%;
+    max-width: 1300px;
+
 }
+.header{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding-inline: rem(50);
+
+    
+
+}
+
+
+    
 .logo {
     display: flex;
     align-items: center;
@@ -166,6 +183,7 @@ h3 {
 
 }
 .discover__body-title {
+    flex-direction: column;
     text-transform: capitalize;
 
 
