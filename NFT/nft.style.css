@@ -329,6 +329,7 @@ h3 {
 .section__3 {
   display: flex;
   justify-content: center;
+  padding-block-end: 5rem;
 }
 
 .create__body-item {
@@ -397,4 +398,70 @@ h3 {
   position: absolute;
   top: 1.125rem;
   left: 1.25rem;
+}
+
+.section__4 {
+  display: flex;
+  justify-content: center;
+  padding-block-start: 5rem;
+}
+
+.browse__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: 800px;
+}
+
+.browse__title {
+  padding-block-end: 2.5rem;
+}
+
+.browse__cards-body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 1.875rem;
+       column-gap: 1.875rem;
+  row-gap: 1.875rem;
+}
+
+.browse__cards-items {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color-card);
+  border-radius: 20px;
+  position: relative;
+  width: 100%;
+  min-width: 188px;
+  min-height: 188px;
+}
+
+.browse__card-icon {
+  display: flex;
+  position: absolute;
+  align-self: center;
+  top: 25%;
+  justify-content: center;
+  min-width: 100px;
+}
+
+.browse__cards-title {
+  padding-inline-start: 1.875rem;
+  padding-block-start: 1.25rem;
+  padding-block-end: 1.5625rem;
+  padding-inline-end: 1.875rem;
+  white-space: nowrap;
+}
+
+.browse__placeholder-img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  filter: blur(5px);
+}
+
+.browse__placeholder-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }/*# sourceMappingURL=nft.style.css.map */

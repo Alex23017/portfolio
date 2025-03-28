@@ -308,6 +308,7 @@ h3 {
 .section__3 {
     display: flex;
     justify-content: center;
+    padding-block-end: rem(80);
 }
 .creators__container {
 
@@ -398,4 +399,82 @@ h3 {
     left: rem(20);
 
 
+}
+
+
+// ======================SECTION__4 BROWSE===============
+
+.section__4 {
+    display: flex;
+    justify-content: center;
+    padding-block-start: rem(80);
+}
+.browse__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 800px;
+
+
+
+}
+.browse__title {
+    padding-block-end: rem(40);
+}
+.browse__cards-body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: rem(30);
+    row-gap: rem(30);
+
+
+}
+.browse__cards-items {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color-card);
+    border-radius: 20px;
+    position: relative;
+    width: 100%;
+    min-width: 188px;
+    min-height: 188px;
+    
+}
+
+.browse__card-icon {
+    display: flex;
+    position: absolute;
+    align-self: center;
+    top: 25%;
+    justify-content: center;
+    min-width: 100px;
+
+
+}
+.browse__card-icon img {
+
+
+
+}
+
+
+.browse__cards-title {
+    padding-inline-start: rem(30);
+    padding-block-start: rem(20);
+    padding-block-end: rem(25);
+    padding-inline-end: rem(30);
+    white-space: nowrap;
+}
+
+.browse__placeholder-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    filter: blur(5px);
+}
+
+
+.browse__placeholder-img img {
+	object-fit: cover;
+    width: 100%;
 }
