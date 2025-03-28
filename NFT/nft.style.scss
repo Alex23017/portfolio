@@ -125,7 +125,7 @@ h3 {
     
 }
 .discover__container {
-    min-width: 1000px;
+    min-width: 1100px;
     display: flex;
     justify-content: center;
 
@@ -251,7 +251,8 @@ h3 {
     row-gap: rem(60);
     align-items: center;
     justify-content: center;
-    min-width: 1100px;
+    min-width: 100%
+
  
     
     
@@ -261,6 +262,9 @@ h3 {
     justify-content: center;
     align-items: center;
     column-gap: rem(30);
+    width: 100%;
+    max-width: 1050px;
+
 
 }
 .trending__card img {
@@ -364,7 +368,10 @@ h3 {
     align-items: space-between;
     justify-content: center;
     align-items: center;
-    min-width: 800px;
+    min-width: 100%;
+    max-width: 1050px;
+
+
 
 
 }
@@ -374,15 +381,23 @@ h3 {
     grid-template-columns: repeat(4, 1fr);
     column-gap: rem(30);
     row-gap: rem(30);
+    width: 100%;
+    max-width: 1050px;
+   
+
 
     }
 
 .creators__body-title {
     display: flex;
     padding-block-end: rem(60);
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
-    column-gap: rem(30);
+    max-width: 1050px;
+    column-gap: rem(20);
+    
+    
+
 
 }
 .creators__body-text{
@@ -469,24 +484,33 @@ h3 {
     display: flex;
     justify-content: center;
     padding-block-start: rem(80);
+    align-items: center;
 }
 .browse__container {
     display: flex;
     align-items: center;
     flex-direction: column;
-    min-width: 800px;
+    min-width: 100%;
+    max-width: 1050px;
+    align-self: center;
+
+
 
 
 
 }
 .browse__title {
     padding-block-end: rem(40);
+    align-self: flex-start;
+
 }
 .browse__cards-body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: rem(30);
     row-gap: rem(30);
+    width: 100%;
+    max-width: 1050px;
 
 
 }
@@ -497,8 +521,8 @@ h3 {
     border-radius: 20px;
     position: relative;
     width: 100%;
-    min-width: 188px;
-    min-height: 188px;
+    min-width: 150px;
+    min-height: 142px;
     
 }
 
@@ -508,11 +532,16 @@ h3 {
     align-self: center;
     top: 25%;
     justify-content: center;
-    min-width: 100px;
+    width: 50%;
+    max-width: 100px;
+    object-fit: cover;
+
 
 
 }
 .browse__card-icon img {
+    min-width: 80px;
+
 
 
 
