@@ -820,3 +820,78 @@ h3 {
 
 }
 
+// ================SECTION__6================
+
+
+.Mashrooms__container {
+    margin-inline: 0;
+    padding-block-start: rem(360);
+    padding-block-end: rem(60);
+}
+
+.Mashrooms__background {
+    background: url('./img/screen-tablet@1x.png') 50% 50% no-repeat;
+    background-size: cover;
+    min-width: 100%;
+
+}
+
+.Mashrooms__items-body {
+    display: flex;
+    align-items: center;
+    column-gap: rem(50);
+
+
+}
+.Mashrooms__column-1 {
+    flex: 1 1 auto;
+
+}
+.Mashrooms__icon-body {
+    background-color: var(--background-color-card);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    column-gap: rem(12);
+    max-width: 150px;
+    padding-inline: rem(20);
+    padding-block: rem(10);
+}
+.Mashrooms__title h2 {
+    padding-block: rem(30);
+    font-size: rem(51);
+
+}
+.Mashrooms__button {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: black;
+    border: inherit;
+    align-self: flex-start;
+}
+.button2 {
+}
+.Mashrooms__countdown-container {
+
+}
+
+.Mashrooms__clock-body span{
+    display: flex;
+    font-size: rem(38);
+    justify-self: center
+   
+}
+.Mashrooms__clock-body{
+    display: flex;
+    column-gap: rem(10);
+
+   
+}
+.Mashrooms__countdown-title p,
+.hourse__clock p {
+    font-size: rem(12);
+    opacity: 0.8;
+}

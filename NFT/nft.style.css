@@ -718,4 +718,73 @@ h3 {
   flex-direction: column;
   align-items: flex-end;
   row-gap: 0.5rem;
+}
+
+.Mashrooms__container {
+  margin-inline: 0;
+  padding-block-start: 22.5rem;
+  padding-block-end: 3.75rem;
+}
+
+.Mashrooms__background {
+  background: url("./img/screen-tablet@1x.png") 50% 50% no-repeat;
+  background-size: cover;
+  min-width: 100%;
+}
+
+.Mashrooms__items-body {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 3.125rem;
+       column-gap: 3.125rem;
+}
+
+.Mashrooms__column-1 {
+  flex: 1 1 auto;
+}
+
+.Mashrooms__icon-body {
+  background-color: var(--background-color-card);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+  max-width: 150px;
+  padding-inline: 1.25rem;
+  padding-block: 0.625rem;
+}
+
+.Mashrooms__title h2 {
+  padding-block: 1.875rem;
+  font-size: 3.1875rem;
+}
+
+.Mashrooms__button {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: black;
+  border: inherit;
+  align-self: flex-start;
+}
+
+.Mashrooms__clock-body span {
+  display: flex;
+  font-size: 2.375rem;
+  justify-self: center;
+}
+
+.Mashrooms__clock-body {
+  display: flex;
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
+}
+
+.Mashrooms__countdown-title p,
+.hourse__clock p {
+  font-size: 0.75rem;
+  opacity: 0.8;
 }/*# sourceMappingURL=nft.style.css.map */
