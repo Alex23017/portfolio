@@ -158,13 +158,13 @@ h3 {
 
 .nav__item-button:hover,
 .nav__item:hover,
-.logo:hover,
 .creators__body-items:hover,
 .browse__cards-items:hover,
 .discover__card-column:hover,
 .join__img:hover,
 .button2:hover,
-.button:hover {
+.button:hover,
+.back__menu:hover {
   transform: scale(1.1);
 }
 
@@ -192,7 +192,8 @@ h3 {
 
 .button,
 .button2,
-.nav__item-button {
+.nav__item-button,
+.back__menu {
   animation: blink 1s ease infinite;
   filter: drop-shadow(0px 5px 5px rgb(255, 255, 255));
 }
@@ -246,6 +247,8 @@ h3 {
 .logo {
   display: flex;
   align-items: center;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
 }
 
 .nav {
