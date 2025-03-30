@@ -101,7 +101,9 @@ h3 {
 .creators__body-items,
 .browse__cards-items,
 .discover__card-column,
-.join__img {
+.join__img,
+.button2,
+.button {
     &:hover {
         transform: scale(1.1);
     }
@@ -124,7 +126,7 @@ h3 {
     filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
     &:hover {
         animation: blink 1s ease infinite;
-        filter: drop-shadow(0px 5px 5px rgb(255, 255, 255));
+        filter: drop-shadow(0px 5px 5px rgb(255, 0, 0));
     }
     
 }
