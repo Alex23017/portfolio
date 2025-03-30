@@ -42,7 +42,32 @@ h3 {
 
 }
 
-// ==============KEYFRAMES================
+// ==============KEYFRAMES BLINK================
+
+@keyframes blink {
+    0%, 100% { 
+        opacity: 1;
+    }
+        50% {
+            opacity: 0.8;
+        }
+
+}
+
+// ==============KEYFRAMES BLINK================
+
+@keyframes rotateXBackAndForth  {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(180deg);
+    }
+ 
+}
+
+// ==============JUMP================
+
 @keyframes jump {
     0%, 100% {
         transform: translateY(0);
@@ -51,6 +76,7 @@ h3 {
         transform: translateY(10px);
 
 }
+
 }
 .animation--jump {
     animation: jump 5s ease-in-out infinite;
@@ -62,18 +88,20 @@ h3 {
         animation: paused;
     }
 }
-// ==============Hover================
+// ==============Hover========================================================
 
+
+
+// ==========================SCALE===============
 
 .nav__item-button,
 .nav__item,
 .logo,
-.button,
-.button2,
+
 .creators__body-items,
 .browse__cards-items,
-.discover__card-column {
-
+.discover__card-column,
+.join__img {
     &:hover {
         transform: scale(1.1);
     }
@@ -83,11 +111,53 @@ h3 {
 
 
 
+// ==========================BLINK + WHITE===============
+
+.trending__card-img,
+.trending__card-items-img,
+.trending__card-items-img--background,
+.creators__items-img,
+.browse__card-icon,
+.works__column-img,
+.nav__link,
+.join__img {
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
+    &:hover {
+        animation: blink 1s ease infinite;
+        filter: drop-shadow(0px 5px 5px rgb(255, 255, 255));
+    }
+    
+}
 
 
+.button,
+.button2,
+.nav__item-button {
+    animation: blink 1s ease infinite;
+    filter: drop-shadow(0px 5px 5px rgb(255, 255, 255));
+
+}
+
+// ==========================TEXT SHADOW===============
 
 
-// ======================================
+.nav__link,
+.button,
+.button2,
+.trending__card-items-img,
+.creators__items-title,
+.browse__cards-title,
+.discover__card-title,
+.trending__title,
+.creators__title,
+.browse__title,
+.discover__title, 
+.text {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+// ===================================================================
 
 .text--mono-reg {
     font-family: 'Space Mono', Helvetica, sans-serif;
@@ -114,20 +184,17 @@ h3 {
     column-gap: rem(30);
     width: 100%;
     max-width: 1300px;
-
 }
+
 .header{
     display: flex;
     justify-content: center;
     align-self: center;
     padding-inline: rem(50);
-
-    
-
 }
 
 
-    
+
 .logo {
     display: flex;
     align-items: center;
@@ -148,22 +215,17 @@ h3 {
 
 .nav__link {
     position: relative;
-}
-
-
-.nav__link{
     &:hover {
         text-decoration: underline;
         text-underline-offset: 10px;
         text-decoration-thickness: 2px;
         text-decoration-color: var(--background-color-button-cards);
         transition: all 0.4s ease-in-out;
-  
     }
-
 }
+
 .nav__item-button .nav__link:hover {
-    text-decoration: none; /* Убираем подчеркивание при наведении */
+    text-decoration: none; 
   }
 
 
@@ -172,29 +234,9 @@ h3 {
     padding-inline: rem(20);
     padding-block: rem(12);
     text-shadow: #2b2b2b;
-    
 }
-.nav__link,
-.button,
-.button2,
-.trending__card-items-img,
-.creators__items-title,
-.browse__cards-title,
-.discover__card-title,
-.trending__title,
-.creators__title,
-.browse__title,
-.discover__title, 
-.text {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
-.trending__card-img,
-.trending__column-card,
-.creators__items-img,
-.browse__card-icon  {
-    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
 
-}
+
 
 
 .nav__item-button {
@@ -223,15 +265,7 @@ h3 {
     justify-content: center;
 }
 
-.container--with {
-    min-width: 100%;
-    max-width: 1050px;
-    }
-
-.body--with {
-    width: 100%;
-    max-width: 1050px;
-}
+// 1
 
 .section__1, 
 .section__2, 
@@ -562,6 +596,8 @@ h3 {
     border-radius: 16px;
     background-color: var(--background-color-card);
 
+    
+
  
     
     
@@ -761,6 +797,9 @@ h3 {
     max-width: 330px;
     width: 100%;
     overflow: hidden;
+    animation: rotateXBackAndForth 2s ease-in-out infinite alternate;
+    transition: all 1s ease;
+    
 }
 
 .discover__card-img img {
@@ -856,8 +895,15 @@ h3 {
 }
 .Mashrooms__column-1 {
     flex: 1 1 auto;
+}
+
+.Mashrooms__column-2,
+.works__column,
+.join__img {
 
 }
+
+
 .Mashrooms__icon-body {
     background-color: var(--background-color-card);
     display: flex;
@@ -931,10 +977,13 @@ h3 {
 
 }
 .works__title-body {
+    padding-block-end: rem(48);
+
 }
 .works__title {
 }
 .works__text {
+
 }
 .text {
 }
@@ -1070,11 +1119,14 @@ h3 {
     display: flex;
     align-items: center;
     width: 100%;
+    flex-wrap: wrap;
+
 }
 
 
 .join__input {
-    width: 100%;
+    min-width: 100%;
+
 
 }
 
@@ -1089,7 +1141,7 @@ h3 {
 
 .join__body-button {
     position: absolute;
-    left: 50%;
+    right: 0;
 
 
 
@@ -1112,18 +1164,14 @@ h3 {
 .digest__body {
     display: flex;
     padding-block-start: rem(40);
-    column-gap: rem(95);
+    column-gap: rem(90);
     justify-content: center;
     row-gap: rem(80);
 
- 
-
-
-
-
-
-
 }
+
+
+
 .digest__column {
     max-width: 240px;
 }
@@ -1192,12 +1240,16 @@ h3 {
 .digest__column3-title {
 }
 
-.join__body-input {
+.join__body-input input::placeholder {
+    min-width: 350px;
+    color: gray;
+    text-align: left;
 }
-.join__input {
+ 
 
-}
+
 .join__body-button {
+
 }
 .digest__column3-text  {
     padding-block-end: rem(20);
@@ -1243,9 +1295,7 @@ h3 {
     padding-block-end: rem(40);
     padding-inline: rem(145);
     min-width: 100%;
-
-
-   
+// =====
 }
 
 .footer__text {

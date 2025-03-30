@@ -112,10 +112,14 @@ body {
 	padding-inline: 115px;
 	
 }
-[class*="page__"] {
-	max-inline-size: 1280px; /* = 1280 + 15 + 15 */
-	margin-inline: auto;
-	padding-inline: 115px;
-	
+
+.container--with {
+    min-width: 100%;
+    max-width: 1050px;
+    }
+
+.body--with {
+    width: 100%;
+    max-width: 1050px;
 }
 
