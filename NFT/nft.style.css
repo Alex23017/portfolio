@@ -278,7 +278,8 @@ h3 {
 .section__4,
 .section__5,
 .section__6,
-.section__7 {
+.section__7,
+.section__8 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -826,10 +827,22 @@ h3 {
   text-align: center;
   text-transform: none;
   align-items: center;
+  background-color: var(--background-color-card);
+  border-radius: 16px;
+}
+
+.works__column-img {
+  padding-block-start: 0.625rem;
+  padding-inline: 2.5rem;
 }
 
 .works__column-title p {
   text-transform: none;
+}
+
+.works__column-title {
+  padding-inline: 1.875rem;
+  padding-block-end: 1.875rem;
 }
 
 .works__column-img {
@@ -842,4 +855,210 @@ h3 {
   width: 100%;
   max-width: 330px;
   min-width: 100px;
+}
+
+.join__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.join__body {
+  display: flex;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+  background-color: var(--background-color-card);
+  border-radius: 16px;
+  max-width: 1050px;
+  width: 100%;
+  padding-inline-start: 3.75rem;
+}
+
+.join__column {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  padding-block: 4.9375rem;
+}
+
+.join__img {
+  width: 425px; /* Устанавливаем фиксированную ширину 425px */
+  max-width: 100%; /* Ограничиваем ширину 100% от доступного пространства */
+  min-width: 300px;
+}
+
+.join__img img {
+  width: 100%; /* Картинка растягивается по ширине родителя */
+}
+
+.join__body-title {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-inline-end: 3.75rem;
+}
+
+.join__title {
+  text-transform: capitalize;
+  max-width: 400px;
+}
+
+.join__text {
+  padding-block-start: 0.625rem;
+  padding-block-end: 2.5rem;
+}
+
+.join__body-button {
+  position: relative;
+  padding-inline: 3.125rem;
+  padding-block: 1.1875rem;
+}
+
+.join__body-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.join__input {
+  width: 100%;
+}
+
+.join__input input {
+  padding-inline-start: 1.25rem;
+  padding-block: 1rem;
+  border-radius: 16px;
+  height: 58px;
+  width: 100%;
+}
+
+.join__body-button {
+  position: absolute;
+  left: 50%;
+}
+
+.digest__container {
+  display: flex;
+  justify-content: center;
+  padding-inline: 9rem;
+  background-color: var(--background-color-card);
+}
+
+.digest__body {
+  display: flex;
+  padding-block-start: 2.5rem;
+  -moz-column-gap: 5.9375rem;
+       column-gap: 5.9375rem;
+  justify-content: center;
+  row-gap: 5rem;
+}
+
+.digest__column {
+  max-width: 240px;
+}
+
+.digest__column3 {
+  max-width: 420px;
+}
+
+.digest__link-body {
+  display: flex;
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
+}
+
+.digest__column3-title,
+.digest__column2-title,
+.digest__logo {
+  padding-block-end: 1.5625rem;
+}
+
+.digest__text,
+.digest__link,
+.digest__link-text,
+.digest__column2-link,
+.digest__column3-text {
+  padding-block-end: 1.25rem;
+  color: #fff;
+  opacity: 0.75;
+}
+
+.digest__link-text {
+  padding-block-end: 0.9375rem;
+}
+
+.digest__column2-link {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+}
+
+.digest__column2-title {
+  padding-block-end: 1.5625rem;
+}
+
+.digest__column3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.digest__column3-text {
+  padding-block-end: 1.25rem;
+}
+
+.digest__body-button {
+  right: 0;
+}
+
+.digest__body-input {
+  max-width: 420px;
+  width: 100%;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  padding-block-start: 1.875rem;
+  padding-block-end: 1.25rem;
+  background-color: var(--background-color-card);
+  min-width: 100%;
+  max-width: 1280px;
+}
+
+.line span {
+  background-color: white;
+  opacity: 0.3;
+  height: 2px;
+  max-width: 1280px;
+  width: 100%;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color-card);
+  padding-block-end: 2.5rem;
+  padding-inline: 9.0625rem;
+  min-width: 100%;
+}
+
+.footer__text {
+  font-size: 0.75rem;
+  color: #fff;
+  opacity: 0.75;
+}
+
+.footer__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 1050px;
 }/*# sourceMappingURL=nft.style.css.map */
