@@ -277,7 +277,8 @@ h3 {
 .section__3,
 .section__4,
 .section__5,
-.section__6 {
+.section__6,
+.section__7 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -721,9 +722,12 @@ h3 {
 }
 
 .Mashrooms__container {
+  display: flex;
+  justify-content: center;
   margin-inline: 0;
   padding-block-start: 22.5rem;
   padding-block-end: 3.75rem;
+  background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, rgb(162, 89, 255) 100%);
 }
 
 .Mashrooms__background {
@@ -737,6 +741,8 @@ h3 {
   align-items: center;
   -moz-column-gap: 3.125rem;
        column-gap: 3.125rem;
+  width: 100%;
+  max-width: 1050px;
 }
 
 .Mashrooms__column-1 {
@@ -771,6 +777,11 @@ h3 {
   align-self: flex-start;
 }
 
+.Mashrooms__countdown-container {
+  background-color: rgba(74, 73, 73, 0.5);
+  border-radius: 16px;
+}
+
 .Mashrooms__clock-body span {
   display: flex;
   font-size: 2.375rem;
@@ -781,10 +792,54 @@ h3 {
   display: flex;
   -moz-column-gap: 0.625rem;
        column-gap: 0.625rem;
+  padding-inline: 1.875rem;
+  padding-block-end: 1.875rem;
 }
 
 .Mashrooms__countdown-title p,
 .hourse__clock p {
   font-size: 0.75rem;
   opacity: 0.8;
+}
+
+.Mashrooms__countdown-title p {
+  padding-block-start: 1.875rem;
+  padding-inline: 1.875rem;
+}
+
+.works__container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.works__cards-body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 1.875rem;
+       column-gap: 1.875rem;
+}
+
+.works__column {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: none;
+  align-items: center;
+}
+
+.works__column-title p {
+  text-transform: none;
+}
+
+.works__column-img {
+  max-width: 330px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.works__column-img img {
+  width: 100%;
+  max-width: 330px;
+  min-width: 100px;
 }/*# sourceMappingURL=nft.style.css.map */

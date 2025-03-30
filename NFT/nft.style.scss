@@ -238,7 +238,8 @@ h3 {
 .section__3, 
 .section__4, 
 .section__5, 
-.section__6 {
+.section__6, 
+.section__7 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -824,15 +825,20 @@ h3 {
 
 
 .Mashrooms__container {
+    display: flex;
+    justify-content: center;
     margin-inline: 0;
     padding-block-start: rem(360);
     padding-block-end: rem(60);
+    background: linear-gradient(180deg, rgba(162.00005114078522, 89.00000989437103, 255, 0) 0%, 
+    rgb(162.00000554323196, 89.00000229477882, 255) 100%);
 }
 
 .Mashrooms__background {
     background: url('./img/screen-tablet@1x.png') 50% 50% no-repeat;
     background-size: cover;
     min-width: 100%;
+    
 
 }
 
@@ -840,6 +846,10 @@ h3 {
     display: flex;
     align-items: center;
     column-gap: rem(50);
+    width: 100%;
+    max-width: 1050px;
+
+
 
 
 }
@@ -875,6 +885,8 @@ h3 {
 .button2 {
 }
 .Mashrooms__countdown-container {
+    background-color: rgba(74, 73, 73, 0.5);
+    border-radius: 16px;
 
 }
 
@@ -887,6 +899,9 @@ h3 {
 .Mashrooms__clock-body{
     display: flex;
     column-gap: rem(10);
+    padding-inline: rem(30);
+    padding-block-end: rem(30);
+
 
    
 }
@@ -894,4 +909,71 @@ h3 {
 .hourse__clock p {
     font-size: rem(12);
     opacity: 0.8;
+}
+.Mashrooms__countdown-title p  {
+    padding-block-start: rem(30);
+    padding-inline: rem(30);
+
+}
+
+
+// ===========SECTION__ 7 WORKS ================
+
+.works__container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    
+}
+.works__items-body {
+
+
+}
+.works__title-body {
+}
+.works__title {
+}
+.works__text {
+}
+.text {
+}
+.works__cards-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: rem(30);
+}
+.works__column {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: none;
+    align-items: center;
+}
+.works__column-img {
+
+   
+
+}
+.works__column-img {
+}
+
+.works__column-img {
+
+}
+.works__column-title p {
+    text-transform: none;
+
+}
+
+.works__column-img{
+    max-width: 330px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.works__column-img img {
+    width: 100%;
+    max-width: 330px;
+    min-width: 100px;
+
 }
