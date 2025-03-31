@@ -1488,3 +1488,229 @@ opacity: 0.8;
     bottom: -60px;
     left: 115px;
 }
+
+
+// ============================PAGE 3 ANIMAKID-2 ============
+.section__animakid-2 {
+}
+.animakid-2__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+}
+.animakid-2__body {
+    padding-block-start: rem(90);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1050px;
+}
+.animakid-2__column {
+}
+.animakid-2__column-1 {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(30);
+}
+.animakid-2-title {
+}
+.animakid-2__number-column {
+    display: flex;
+}
+.animakid-2__number-body {
+}
+.animakid-2__number-number {
+}
+
+.animakid-2__number-text {
+}
+.animakid-2__bio p {
+    padding-block-start: rem(10);
+}
+.animakid-2__bio span,
+.animakid-2__links p {
+    color: var(--color-number);
+    font-size: rem(18);
+
+    
+}
+.animakid-2__links {
+}
+.animakid-2__links-body {
+    padding-block-start: rem(10);
+}
+.animakid-2__column-2 {
+}
+.animakid-2__button-body {
+    display: flex;
+    align-items: center;
+    column-gap: rem(20);
+}
+.animakid-2__button {
+    padding-inline: rem(20.5);
+    padding-block: rem(19);
+}
+
+.animakid-2__button2 {
+}
+
+.line__page3 {
+    background-color:var(--background-color-number);
+    
+}
+
+.line__page3 span {
+    opacity: 0.1;
+    height: 1px;
+}
+
+
+// ===================PAGE 3 menu card ==================
+
+.section__owned {
+}
+.owned__container {
+    max-width: 1050px;
+}
+.owner__body {
+}
+.owned__menu {
+    display: flex;
+    column-gap: rem(16);
+    justify-content: space-around;
+    font-size: rem(21);
+    align-items: center;
+    padding-block-end: 5px;
+
+}
+
+.owned__menu-created {
+
+}
+.menu__created-text {
+}
+.menu__created-value {
+}
+.owned__menu-owned {
+}
+.menu__owned-text {
+}
+.menu__owned-value {
+}
+.owned__menu-collection  {
+
+}
+.menu__collection-text {
+}
+.menu__collection-value {
+}
+
+.menu__value {
+font-size: rem(14);
+background-color: var(--background-color-card);
+border-radius: 16px;
+padding-block: 8px;
+padding-inline: 12px;
+
+
+}
+.menu__owned-text {
+color: var(--color-number);
+&:hover {
+    color: #fff;
+
+}
+}
+
+.owned__menu-created,
+.owned__menu-owned,
+.owned__menu-collection {
+    &:hover {
+    .menu__owned-text{
+        color: white;
+        
+
+    }
+    .menu__created-value,
+    .menu__owned-value,
+    .menu__collection-value{
+        background-color: rgba(221, 208, 208, 0.486);
+    }
+
+}
+}
+
+.owned__menu-owned, 
+.owned__menu-created, 
+.owned__menu-collection {
+    position: relative;
+}
+
+
+.owned__menu-created:after,
+.owned__menu-owned:after, 
+.owned__menu-collection:after {
+    
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0.5px;
+    background-color: #b6adad;
+    bottom: 0;
+    transition: all 0.3s ease-in;
+   
+}
+
+.owned__menu-created:hover:after, 
+.owned__menu-owned:hover:after, 
+.owned__menu-collection:hover:after {
+    width: 200%; 
+  }
+
+// ===============PAGE 3 CARD BODY===================
+
+.section__Animakid-card {
+    background-color: var(--background-color-card);
+}
+.Animakid-card__container {
+    display: flex;
+    justify-content: center;
+    padding-block-start: rem(80);
+}
+.Animakid-card__body {
+}
+
+.Animakid__card-column {
+    background-color: var(--background-color-number);
+}
+
+.discover__card-column {
+}
+.discover__card-body {
+}
+.discover__card-img {
+}
+.discover__card-title {
+}
+.discover__icon-body {
+}
+.discover__body-img {
+}
+.discover__body-text {
+}
+
+.discover__price-column {
+}
+.discover__body-price {
+}
+.discover__price-text {
+}
+.discover__body-value {
+}
+.discover__body-bid {
+}
+.discover__bid-text {
+}
+.discover__bid_value {
+}

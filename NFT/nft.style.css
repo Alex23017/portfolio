@@ -1266,4 +1266,148 @@ h3 {
   position: absolute;
   bottom: -60px;
   left: 115px;
+}
+
+.animakid-2__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+}
+
+.animakid-2__body {
+  padding-block-start: 5.625rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1050px;
+}
+
+.animakid-2__column-1 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.875rem;
+}
+
+.animakid-2__number-column {
+  display: flex;
+}
+
+.animakid-2__bio p {
+  padding-block-start: 0.625rem;
+}
+
+.animakid-2__bio span,
+.animakid-2__links p {
+  color: var(--color-number);
+  font-size: 1.125rem;
+}
+
+.animakid-2__links-body {
+  padding-block-start: 0.625rem;
+}
+
+.animakid-2__button-body {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+
+.animakid-2__button {
+  padding-inline: 1.28125rem;
+  padding-block: 1.1875rem;
+}
+
+.line__page3 {
+  background-color: var(--background-color-number);
+}
+
+.line__page3 span {
+  opacity: 0.1;
+  height: 1px;
+}
+
+.owned__container {
+  max-width: 1050px;
+}
+
+.owned__menu {
+  display: flex;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  justify-content: space-around;
+  font-size: 1.3125rem;
+  align-items: center;
+  padding-block-end: 5px;
+}
+
+.menu__value {
+  font-size: 0.875rem;
+  background-color: var(--background-color-card);
+  border-radius: 16px;
+  padding-block: 8px;
+  padding-inline: 12px;
+}
+
+.menu__owned-text {
+  color: var(--color-number);
+}
+.menu__owned-text:hover {
+  color: #fff;
+}
+
+.owned__menu-created:hover .menu__owned-text,
+.owned__menu-owned:hover .menu__owned-text,
+.owned__menu-collection:hover .menu__owned-text {
+  color: white;
+}
+.owned__menu-created:hover .menu__created-value,
+.owned__menu-created:hover .menu__owned-value,
+.owned__menu-created:hover .menu__collection-value,
+.owned__menu-owned:hover .menu__created-value,
+.owned__menu-owned:hover .menu__owned-value,
+.owned__menu-owned:hover .menu__collection-value,
+.owned__menu-collection:hover .menu__created-value,
+.owned__menu-collection:hover .menu__owned-value,
+.owned__menu-collection:hover .menu__collection-value {
+  background-color: rgba(221, 208, 208, 0.486);
+}
+
+.owned__menu-owned,
+.owned__menu-created,
+.owned__menu-collection {
+  position: relative;
+}
+
+.owned__menu-created:after,
+.owned__menu-owned:after,
+.owned__menu-collection:after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0.5px;
+  background-color: #b6adad;
+  bottom: 0;
+  transition: all 0.3s ease-in;
+}
+
+.owned__menu-created:hover:after,
+.owned__menu-owned:hover:after,
+.owned__menu-collection:hover:after {
+  width: 200%;
+}
+
+.section__Animakid-card {
+  background-color: var(--background-color-card);
+}
+
+.Animakid-card__container {
+  display: flex;
+  justify-content: center;
+  padding-block-start: 5rem;
+}
+
+.Animakid__card-column {
+  background-color: var(--background-color-number);
 }/*# sourceMappingURL=nft.style.css.map */
