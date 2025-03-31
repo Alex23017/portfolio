@@ -102,6 +102,7 @@ h3 {
 .join__img,
 .button2,
 .button,
+.digest__link-com,
 .back__menu {
     &:hover {
         transform: scale(1.1);
@@ -154,7 +155,8 @@ h3 {
 .creators__title,
 .browse__title,
 .discover__title, 
-.text {
+.text,
+.create__input input {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -1225,8 +1227,36 @@ h3 {
 .digest__link-text {
     padding-block-end: rem(15);
 }
-.digest__link-com {
+
+
+
+
+.digest__link-discord {
+    &:hover {
+    background-color: #2234ba;
+    border-radius: 100px;
+    }
 }
+.digest__link-utube {
+    &:hover {
+        background-color: #ff190c;
+        border-radius: 100px;
+        }
+}
+.digest__link-twitter {
+    &:hover {
+        background-color: #209cea;
+        border-radius: 100px;
+        }
+}
+.digest__link-instagram {
+    &:hover {
+        background-color: #b51212;
+        border-radius: 100px;
+        }
+}
+
+
 .digest__column2 {
 
 
@@ -1319,4 +1349,122 @@ h3 {
     justify-content: center;
     width: 100%;
     max-width: 1050px;
+}
+// =====================PAGE SIGN UP ========================
+
+.section__create {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create__container {
+  
+
+ 
+    padding: 0;
+}
+.create__body {
+    display: flex;
+    align-items: center;
+    column-gap: rem(60);
+    flex-wrap: wrap;
+    
+
+
+}
+.create__column-1{
+    width: 630px; /* Устанавливаем фиксированную ширину 425px */
+    max-width: 100%; /* Ограничиваем ширину 100% от доступного пространства */
+    min-width: 300px;
+
+
+ }
+ 
+ .create__column-1 img {
+     width: 100%; /* Картинка растягивается по ширине родителя */
+
+ }
+
+
+ 
+
+
+.create__title-body {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    text-transform: capitalize;
+}
+.create__title h2 {
+    padding-block-end: rem(20);
+    font-size: rem(51);
+
+}
+.create__text {
+opacity: 0.8;
+    text-transform: capitalize;
+}
+.create__body-input {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(15);
+}
+.create__body-input .create__button {
+    padding-block-start: 15px;
+}
+
+.create__body-link {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(15);
+    max-width: 330px;
+}
+.create__input  {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(15);
+    
+}
+.create__input input  {
+    padding-block: rem(12);
+    border-radius: 16px;
+    padding-inline-start: rem(52);
+    
+
+}
+
+.create__input {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    &:hover {
+    animation: blink 1s ease infinite;
+    }
+}
+
+
+.create__input input::placeholder {
+   color: black;
+   font-size: rem(16);
+   opacity: 0.8;
+ 
+}
+
+
+
+.username-input,
+.email-input,
+.password-input,
+.confirm-input   {
+    position: absolute;
+    padding-inline-start: rem(20);
+    padding-inline-end: rem(13);
+    
+}
+
+.create__button {
+    padding-block: rem(12);
+    text-align: center;
+    margin-block-start: rem(15);
 }

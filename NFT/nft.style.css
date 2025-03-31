@@ -164,6 +164,7 @@ h3 {
 .join__img:hover,
 .button2:hover,
 .button:hover,
+.digest__link-com:hover,
 .back__menu:hover {
   transform: scale(1.1);
 }
@@ -209,7 +210,8 @@ h3 {
 .creators__title,
 .browse__title,
 .discover__title,
-.text {
+.text,
+.create__input input {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -1034,6 +1036,26 @@ h3 {
   padding-block-end: 0.9375rem;
 }
 
+.digest__link-discord:hover {
+  background-color: #2234ba;
+  border-radius: 100px;
+}
+
+.digest__link-utube:hover {
+  background-color: #ff190c;
+  border-radius: 100px;
+}
+
+.digest__link-twitter:hover {
+  background-color: #209cea;
+  border-radius: 100px;
+}
+
+.digest__link-instagram:hover {
+  background-color: #b51212;
+  border-radius: 100px;
+}
+
 .digest__column2-link {
   display: flex;
   flex-direction: column;
@@ -1115,4 +1137,114 @@ h3 {
   justify-content: center;
   width: 100%;
   max-width: 1050px;
+}
+
+.section__create {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.create__container {
+  padding: 0;
+}
+
+.create__body {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 3.75rem;
+       column-gap: 3.75rem;
+  flex-wrap: wrap;
+}
+
+.create__column-1 {
+  width: 630px; /* Устанавливаем фиксированную ширину 425px */
+  max-width: 100%; /* Ограничиваем ширину 100% от доступного пространства */
+  min-width: 300px;
+}
+
+.create__column-1 img {
+  width: 100%; /* Картинка растягивается по ширине родителя */
+}
+
+.create__title-body {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  text-transform: capitalize;
+}
+
+.create__title h2 {
+  padding-block-end: 1.25rem;
+  font-size: 3.1875rem;
+}
+
+.create__text {
+  opacity: 0.8;
+  text-transform: capitalize;
+}
+
+.create__body-input {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.9375rem;
+}
+
+.create__body-input .create__button {
+  padding-block-start: 15px;
+}
+
+.create__body-link {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.9375rem;
+  max-width: 330px;
+}
+
+.create__input {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.9375rem;
+}
+
+.create__input input {
+  padding-block: 0.75rem;
+  border-radius: 16px;
+  padding-inline-start: 3.25rem;
+}
+
+.create__input {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.create__input:hover {
+  animation: blink 1s ease infinite;
+}
+
+.create__input input::-moz-placeholder {
+  color: black;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.create__input input::placeholder {
+  color: black;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.username-input,
+.email-input,
+.password-input,
+.confirm-input {
+  position: absolute;
+  padding-inline-start: 1.25rem;
+  padding-inline-end: 0.8125rem;
+}
+
+.create__button {
+  padding-block: 0.75rem;
+  text-align: center;
+  margin-block-start: 0.9375rem;
 }/*# sourceMappingURL=nft.style.css.map */
