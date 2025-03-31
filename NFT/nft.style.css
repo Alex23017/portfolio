@@ -156,6 +156,19 @@ h3 {
   animation: paused;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body {
+  opacity: 0;
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+
 .nav__item-button:hover,
 .nav__item:hover,
 .creators__body-items:hover,
@@ -167,6 +180,7 @@ h3 {
 .digest__link-com:hover,
 .back__menu:hover {
   transform: scale(1.1);
+  animation: none;
 }
 
 .trending__card-img,
@@ -176,7 +190,8 @@ h3 {
 .browse__card-icon,
 .works__column-img,
 .nav__link,
-.join__img {
+.join__img,
+.discover__card-img {
   filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
 }
 .trending__card-img:hover,
@@ -186,7 +201,8 @@ h3 {
 .browse__card-icon:hover,
 .works__column-img:hover,
 .nav__link:hover,
-.join__img:hover {
+.join__img:hover,
+.discover__card-img:hover {
   animation: blink 1s ease infinite;
   filter: drop-shadow(0px 5px 5px rgb(255, 0, 0));
 }
@@ -194,7 +210,8 @@ h3 {
 .button,
 .button2,
 .nav__item-button,
-.back__menu {
+.back__menu,
+.pay__column {
   animation: blink 1s ease infinite;
   filter: drop-shadow(0px 5px 5px rgb(255, 255, 255));
 }
@@ -211,7 +228,10 @@ h3 {
 .browse__title,
 .discover__title,
 .text,
-.create__input input {
+.create__input input,
+.discover__card-title,
+.discover__price-column p,
+.discover__body-text {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -237,6 +257,10 @@ h3 {
        column-gap: 1.875rem;
   width: 100%;
   max-width: 1300px;
+  position: fixed;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  z-index: 100;
 }
 
 .header {
@@ -333,6 +357,7 @@ h3 {
   display: flex;
   -moz-column-gap: 1.875rem;
        column-gap: 1.875rem;
+  padding-block-start: 5rem;
 }
 
 .discover__column-1 {
@@ -657,6 +682,9 @@ h3 {
   width: 100%;
   filter: blur(5px);
 }
+.browse__placeholder-img:hover {
+  filter: none;
+}
 
 .browse__placeholder-img img {
   -o-object-fit: cover;
@@ -712,6 +740,9 @@ h3 {
   overflow: hidden;
   animation: rotateXBackAndForth 2s ease-in-out infinite alternate;
   transition: all 1s ease;
+}
+.discover__card-img:hover {
+  animation: none;
 }
 
 .discover__card-img img {
@@ -1002,6 +1033,11 @@ h3 {
   row-gap: 5rem;
 }
 
+.digest__body h3 {
+  font-family: Monospace;
+  text-transform: capitalize;
+}
+
 .digest__column {
   max-width: 240px;
 }
@@ -1139,6 +1175,12 @@ h3 {
   max-width: 1050px;
 }
 
+.header__body-sign {
+  position: static;
+  -webkit-backdrop-filter: none;
+          backdrop-filter: none;
+}
+
 .section__create {
   display: flex;
   justify-content: center;
@@ -1253,6 +1295,10 @@ h3 {
   position: relative;
 }
 
+.Animakid__card-img {
+  animation: none;
+}
+
 .animakid-1__container {
   min-width: 100%;
   padding-inline: 0;
@@ -1266,6 +1312,18 @@ h3 {
   position: absolute;
   bottom: -60px;
   left: 115px;
+  transform: translateX(0vw);
+  transition: all 10s ease;
+}
+.animakid-1__avatar:hover {
+  transform: translateX(85vw);
+  transition: all 10s ease;
+}
+
+.header__page-3 {
+  position: fixed;
+  z-index: 50;
+  border-radius: 16px;
 }
 
 .animakid-2__container {
@@ -1281,6 +1339,7 @@ h3 {
   justify-content: space-between;
   width: 100%;
   max-width: 1050px;
+  flex-wrap: wrap;
 }
 
 .animakid-2__column-1 {
@@ -1291,10 +1350,18 @@ h3 {
 
 .animakid-2__number-column {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Animakid__body-columnn {
+  row-gap: 1.875rem;
 }
 
 .animakid-2__bio p {
   padding-block-start: 0.625rem;
+  font-size: 1.375rem;
+  text-transform: capitalize;
 }
 
 .animakid-2__bio span,
@@ -1329,17 +1396,27 @@ h3 {
 }
 
 .owned__container {
-  max-width: 1050px;
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+}
+
+.owner__body {
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
 }
 
 .owned__menu {
   display: flex;
   -moz-column-gap: 1rem;
        column-gap: 1rem;
-  justify-content: space-around;
+  justify-content: center;
   font-size: 1.3125rem;
   align-items: center;
   padding-block-end: 5px;
+  width: 100%;
+  max-width: 1050px;
 }
 
 .menu__value {
@@ -1348,6 +1425,7 @@ h3 {
   border-radius: 16px;
   padding-block: 8px;
   padding-inline: 12px;
+  max-width: 50px;
 }
 
 .menu__owned-text {
@@ -1395,7 +1473,7 @@ h3 {
 .owned__menu-created:hover:after,
 .owned__menu-owned:hover:after,
 .owned__menu-collection:hover:after {
-  width: 200%;
+  width: 100%;
 }
 
 .section__Animakid-card {
@@ -1406,8 +1484,67 @@ h3 {
   display: flex;
   justify-content: center;
   padding-block-start: 5rem;
+  min-width: 100%;
+}
+
+.Animakid-card__body {
+  display: flex;
+  width: 100%;
 }
 
 .Animakid__card-column {
   background-color: var(--background-color-number);
+}
+
+.header__body-page3 {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 9.375rem;
+       column-gap: 9.375rem;
+}
+
+.line--black {
+  background-color: var(--background-color-card);
+}
+
+.line--black span {
+  background-color: #2b2b2b;
+  opacity: 1;
+}
+
+.page__3-footer {
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+
+.wallet__button {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+  justify-content: flex-start;
+  padding-block: 1.28125rem;
+  padding-inline: 1.25rem;
+  width: 100%;
+}
+
+.wallet__input,
+.wallet__button {
+  animation: none;
+  filter: none;
+}
+
+.create__button:hover {
+  animation: blink 1s ease infinite;
+  filter: drop-shadow(0px 5px 5px rgb(255, 255, 255));
+}
+
+.wallet__button img {
+  padding-inline-start: 1.25rem;
+  min-width: 40px;
+}
+
+.pay__input {
+  padding-block-end: 5rem;
 }/*# sourceMappingURL=nft.style.css.map */
