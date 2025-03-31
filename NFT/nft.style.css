@@ -1247,4 +1247,23 @@ h3 {
   padding-block: 0.75rem;
   text-align: center;
   margin-block-start: 0.9375rem;
+}
+
+.section__animakid-1 {
+  position: relative;
+}
+
+.animakid-1__container {
+  min-width: 100%;
+  padding-inline: 0;
+}
+
+.animakid-1__container img {
+  width: 100%;
+}
+
+.animakid-1__avatar {
+  position: absolute;
+  bottom: -60px;
+  left: 115px;
 }/*# sourceMappingURL=nft.style.css.map */

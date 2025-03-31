@@ -1387,7 +1387,7 @@ h3 {
  }
 
 
- 
+
 
 
 .create__title-body {
@@ -1467,4 +1467,24 @@ opacity: 0.8;
     padding-block: rem(12);
     text-align: center;
     margin-block-start: rem(15);
+}
+
+// ============PAGE 3 ANIMAKID=============
+
+.section__animakid-1 {
+    position: relative;
+}
+.animakid-1__container {
+
+    min-width: 100%;
+    padding-inline: 0;
+}
+.animakid-1__container img {
+    width: 100%;
+}
+
+.animakid-1__avatar {
+    position: absolute;
+    bottom: -60px;
+    left: 115px;
 }
