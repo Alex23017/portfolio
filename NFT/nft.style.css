@@ -431,14 +431,12 @@ body {
   min-width: 330px;
 }
 
-
 .trending__container {
   display: flex;
-    flex-direction: column;
-    row-gap: rem(60);
-    align-items: center;
-    justify-content: center;
-
+  flex-direction: column;
+  row-gap: 3.75rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .trending__body {
