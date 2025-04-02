@@ -810,13 +810,14 @@ body {
 }
 .discover__body-columnn {
     display: grid;
-    grid-template-columns:repeat(2, 1fr);
+    grid-template-columns:repeat(3, 1fr);
     column-gap: rem(30);
     width: 100%;
     max-width: 1050px;
     justify-content: center;
     align-items: center;
-
+    row-gap: rem(20);
+    
 }
 
 .discover__body-title {
@@ -2128,3 +2129,4 @@ margin-block-end: rem(110);
 .text--sa p {
     font-size: 22px;
 }
+

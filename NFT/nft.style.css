@@ -719,13 +719,14 @@ body {
 
 .discover__body-columnn {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   -moz-column-gap: 1.875rem;
        column-gap: 1.875rem;
   width: 100%;
   max-width: 1050px;
   justify-content: center;
   align-items: center;
+  row-gap: 1.25rem;
 }
 
 .discover__body-title {
