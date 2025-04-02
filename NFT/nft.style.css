@@ -431,13 +431,14 @@ body {
   min-width: 330px;
 }
 
+
 .trending__container {
-  padding-block: 5rem;
   display: flex;
-  flex-direction: column;
-  row-gap: 3.75rem;
-  align-items: center;
-  justify-content: center;
+    flex-direction: column;
+    row-gap: rem(60);
+    align-items: center;
+    justify-content: center;
+
 }
 
 .trending__body {
@@ -547,6 +548,8 @@ body {
   -moz-column-gap: 1.875rem;
        column-gap: 1.875rem;
   row-gap: 1.875rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .creators__body-title,
@@ -580,6 +583,15 @@ body {
   align-items: center;
   border-radius: 16px;
   background-color: var(--background-color-card);
+}
+.creators__body-items .creators__column-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.creators__body-items .creators__total-body {
+  width: 100%;
 }
 
 .creators__items-img {
@@ -709,7 +721,7 @@ body {
 
 .discover__body-columnn {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   -moz-column-gap: 1.875rem;
        column-gap: 1.875rem;
   width: 100%;
@@ -819,6 +831,7 @@ body {
        column-gap: 3.125rem;
   width: 100%;
   max-width: 1050px;
+  padding-inline: 3.125rem;
 }
 
 .Mashrooms__column-1 {
@@ -889,15 +902,25 @@ body {
   align-self: center;
 }
 
+.works__items-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .works__title-body {
+  width: 100%;
   padding-block-end: 3rem;
 }
 
 .works__cards-body {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   -moz-column-gap: 1.875rem;
        column-gap: 1.875rem;
+  flex-wrap: wrap;
+  row-gap: 1.875rem;
 }
 
 .works__column {
@@ -1594,9 +1617,11 @@ body {
   max-width: 1050px;
   padding-block: 5rem;
   font-size: 3.1875rem;
+  width: 100%;
+  padding-inline: 0;
 }
 
-.ranking__container-title h2 {
+.ranking__title h2 {
   font-size: 3.1875rem;
 }
 
@@ -1677,7 +1702,7 @@ body {
 }
 
 .ranking__container-cards {
-  min-width: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   padding-block-end: 2.5rem;
@@ -1774,7 +1799,7 @@ body {
   align-self: center;
 }
 
-.wrapper__ranking {
+.wrapper {
   min-width: 100%;
   min-width: 375px;
 }

@@ -440,17 +440,17 @@ body {
 // =====================SECTION__2 TRENDING=================
 
 
+
+
+
 .trending__container {
-    padding-block: rem(80);
-    display: flex;
+  display: flex;
     flex-direction: column;
     row-gap: rem(60);
     align-items: center;
     justify-content: center;
 
 
- 
-    
     
 }
 .trending__body {
@@ -583,6 +583,8 @@ body {
     grid-template-columns: repeat(4, 1fr);
     column-gap: rem(30);
     row-gap: rem(30);
+    justify-content: center;
+    align-items: center;
     }
 
 .creators__body-title, 
@@ -634,7 +636,15 @@ body {
     background-color: var(--background-color-card);
 
     
-
+.creators__column-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.creators__total-body {
+    width: 100%;
+}
  
     
     
@@ -801,7 +811,7 @@ body {
 }
 .discover__body-columnn {
     display: grid;
-    grid-template-columns:repeat(3, 1fr);
+    grid-template-columns:repeat(2, 1fr);
     column-gap: rem(30);
     width: 100%;
     max-width: 1050px;
@@ -940,6 +950,7 @@ body {
     column-gap: rem(50);
     width: 100%;
     max-width: 1050px;
+    padding-inline: rem(50);
 
 
 
@@ -1025,10 +1036,15 @@ body {
     
 }
 .works__items-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 
 }
 .works__title-body {
+    width: 100%;
     padding-block-end: rem(48);
 
 }
@@ -1041,8 +1057,10 @@ body {
 }
 .works__cards-body {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     column-gap: rem(30);
+    flex-wrap: wrap;
+    row-gap: rem(30);
 }
 .works__column {
     display: flex;
@@ -1898,8 +1916,10 @@ color: var(--color-number);
     max-width: 1050px;
     padding-block: rem(80);
     font-size: rem(51);
+    width: 100%;
+    padding-inline: 0;
 }
-.ranking__container-title h2 {
+.ranking__title h2 {
     font-size: rem(51);
   
 }
@@ -1984,7 +2004,7 @@ margin-block-end: rem(110);
     min-width: 100%;
 }
 .ranking__container-cards {
-    min-width: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     padding-block-end: rem(40);
@@ -2041,10 +2061,7 @@ margin-block-end: rem(110);
     border-radius: 100px;
     color: var(--color-number);
 }
-.ranking__img-ava {
-}
-.ranking__title {
-}
+
 .ranking__column-body-2 {
     display: flex;
     width: 58%;
@@ -2104,7 +2121,7 @@ margin-block-end: rem(110);
  
 }
 
-.wrapper__ranking {
+.wrapper {
     min-width: 100%;
     min-width: 375px;
 }

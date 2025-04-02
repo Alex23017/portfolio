@@ -38,9 +38,43 @@
     .create__body {
         row-gap: 30px;
     }
-    .tablet--none {
+    .creators__body-items .tablet--none{
         display: none;
     }
+    .creators__body-items:nth-of-type(7),
+    .creators__body-items:nth-of-type(8),
+    .creators__body-items:nth-of-type(9),
+    .creators__body-items:nth-of-type(10),
+    .creators__body-items:nth-of-type(11),
+    .creators__body-items:nth-of-type(12){
+        display: none;
+
+    }
+    .discover__card-column:nth-of-type(3) {
+        display: none;
+
+    }
+    .discover__body-columnn {
+        display: grid;
+        grid-template-columns: repeat(2, 330px);
+        width: 100%;
+
+    }
+.works__column-title p {
+    font-size: 16px;
+    line-height: 120%;
+    opacity: 0.8;
+}
+.works__column-title h3 {
+    white-space: nowrap;
+}
+ .works__column-img {
+    min-width: 167.8px;
+ }
+ .works__column-img img {
+    min-width: 167.8px;
+ }
+ 
     
     .digest__container,
     .footer__container,
@@ -190,9 +224,63 @@
 }
 
 
+.section__3 {
+    padding-block-start: 40px;
+}
+.discover__container,
+.trending__container,
+.creators__container,
+.browse__container,
+.discover__container,
+.works__container,
+.join__container {
+    padding-inline: 72px;
+}
+
+
+.create__body-item {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
 
 }
 
+
+.creators__body-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.creators__items-img {
+    padding: 20px;
+
+}
+.creators__column-body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.creators__total-body {
+    padding: 0;
+    padding-block-start: 5px;
+}
+.creators__items-title {
+    width: 100%;
+}
+
+.tabtel--none {
+    display: none;
+}
+
+
+
+.creators__items-img img{
+    max-width: 60px;
+}
+
+
+}
 
 /* ======================= */
 @media (hover: none), (max-width: 970px) {
@@ -217,6 +305,20 @@
 }
 
 @media (max-width: 600px) {
+
+
+}
+.discover__container,
+.trending__container,
+.creators__container,
+.browse__container,
+.discover__container,
+.works__container,
+.join__container {
+    padding-inline: 30px;
+}
+
+
     .menu__value  {
         display: none;
     }
@@ -329,7 +431,7 @@
     min-width: 315px;
 
   }
-}
+
 
 
 @media (max-width: 400px) {
