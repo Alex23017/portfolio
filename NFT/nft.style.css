@@ -1017,11 +1017,22 @@ body {
   right: 0;
 }
 
+.ranking__link {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+
+.section__9 {
+  min-width: 100%;
+}
+
 .digest__container {
   display: flex;
   justify-content: center;
   padding-inline: 9rem;
   background-color: var(--background-color-card);
+  min-width: 100%;
 }
 
 .digest__body {
@@ -1031,6 +1042,8 @@ body {
        column-gap: 5.625rem;
   justify-content: center;
   row-gap: 5rem;
+  width: 100%;
+  max-width: 1050px;
 }
 
 .digest__body h3 {
@@ -1187,26 +1200,37 @@ body {
   align-items: center;
 }
 
+.section__create {
+  display: flex;
+  width: 100%;
+  max-width: 1280px;
+}
+
 .create__container {
+  display: flex;
+  max-width: 1050px;
   padding: 0;
 }
 
 .create__body {
   display: flex;
-  align-items: center;
   -moz-column-gap: 3.75rem;
        column-gap: 3.75rem;
-  flex-wrap: wrap;
+  flex: 1;
 }
 
-.create__column-1 {
-  width: 630px; /* Устанавливаем фиксированную ширину 425px */
-  max-width: 100%; /* Ограничиваем ширину 100% от доступного пространства */
-  min-width: 300px;
+.wrapper__sign {
+  align-items: center;
 }
 
-.create__column-1 img {
-  width: 100%; /* Картинка растягивается по ширине родителя */
+.create__img {
+  flex: 1 1 auto;
+}
+
+.create__img img {
+  min-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .create__title-body {
@@ -1409,14 +1433,15 @@ body {
 
 .owned__menu {
   display: flex;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
   justify-content: center;
   font-size: 1.3125rem;
   align-items: center;
   padding-block-end: 5px;
   width: 100%;
   max-width: 1050px;
+  white-space: nowrap;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
 }
 
 .menu__value {
@@ -1547,4 +1572,171 @@ body {
 
 .pay__input {
   padding-block-end: 5rem;
+}
+
+.ranking__container-title {
+  padding-block-end: 5rem;
+}
+
+.header__ranking {
+  margin-block-end: 11.25rem;
+}
+
+.artist__container {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-block-start: 2.5rem;
+  font-size: 1.125rem;
+  white-space: nowrap;
+  padding-block-end: 1.25rem;
+}
+
+.artist__body {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1090px;
+  justify-content: center;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+  border: 1px solid var(--color-number);
+  border-radius: 20px;
+  padding-block: 0.75rem;
+  padding-inline: 1.25rem;
+  color: #fff;
+  opacity: 0.3;
+}
+
+.artist__colum {
+  display: flex;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+
+.artist__column-1 {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.artist__column-2 {
+  display: flex;
+  justify-content: flex-start;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.artist__column-2 p {
+  display: flex;
+  justify-content: flex-start;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.ranking__menu {
+  display: flex;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+
+.ranking__container-cards {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-block-end: 2.5rem;
+}
+
+.ranking__body-cards {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+  width: 100%;
+  max-width: 1090px;
+}
+
+.ranking__card-body {
+  display: flex;
+  padding-block: 0.78125rem;
+  background-color: var(--background-color-card);
+  border-radius: 20px;
+  padding-inline: 1.25rem;
+  justify-content: space-between;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+.ranking__card-body:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.ranking__column-body {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.ranking__column-body-1 {
+  display: flex;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+
+.ranking__body-number {
+  background-color: var(--background-color-number);
+  padding-block: 0.25rem;
+  padding-inline: 0.625rem;
+  border-radius: 100px;
+  color: var(--color-number);
+}
+
+.ranking__column-body-2 {
+  display: flex;
+  width: 58%;
+}
+
+.ranking__body-text {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.ranking__text {
+  white-space: nowrap;
+  width: 100%;
+  display: flex;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+  justify-content: flex-start;
+}
+
+.ranking__text span,
+.ranking__text p {
+  display: flex;
+  justify-content: flex-start;
+  width: 33%;
+  font-size: 1.125rem;
+}
+
+.ranking__text span {
+  color: rgb(25, 189, 25);
+}
+
+.ranking__body-text {
+  flex-direction: column;
+  display: flex;
+}
+
+.ranking__text {
+  font-size: 1.375rem;
+}
+
+.ranking__today {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
 }/*# sourceMappingURL=nft.style.css.map */
