@@ -1588,7 +1588,22 @@ body {
 }
 
 .ranking__container-title {
+  display: flex;
+  justify-content: center;
   padding-block-end: 5rem;
+  max-width: 1050px;
+  padding-block: 5rem;
+  font-size: 3.1875rem;
+}
+
+.ranking__container-title h2 {
+  font-size: 3.1875rem;
+}
+
+.ranking__text p,
+.creators__text p {
+  font-size: 1.375rem;
+  width: 100%;
 }
 
 .header__ranking {
@@ -1762,4 +1777,8 @@ body {
 .wrapper__ranking {
   min-width: 100%;
   min-width: 375px;
+}
+
+.text--sa p {
+  font-size: 22px;
 }/*# sourceMappingURL=nft.style.css.map */

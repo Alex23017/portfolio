@@ -1892,8 +1892,24 @@ color: var(--color-number);
 
 
 .ranking__container-title {
+    display: flex;
+    justify-content: center;
     padding-block-end: rem(80);
+    max-width: 1050px;
+    padding-block: rem(80);
+    font-size: rem(51);
 }
+.ranking__container-title h2 {
+    font-size: rem(51);
+  
+}
+.ranking__text p,
+.creators__text p  {
+    font-size: rem(22);
+    width: 100%;
+  
+}
+
 
 .header__ranking {
 
@@ -2091,4 +2107,8 @@ margin-block-end: rem(110);
 .wrapper__ranking {
     min-width: 100%;
     min-width: 375px;
+}
+
+.text--sa p {
+    font-size: 22px;
 }
