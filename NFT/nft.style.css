@@ -1450,7 +1450,6 @@ body {
   justify-content: center;
   font-size: 1.3125rem;
   align-items: center;
-  padding-block-end: 5px;
   width: 100%;
   max-width: 1050px;
   white-space: nowrap;
@@ -1593,7 +1592,7 @@ body {
 }
 
 .header__ranking {
-  margin-block-end: 11.25rem;
+  margin-block-end: 6.875rem;
 }
 
 .artist__container {
@@ -1655,6 +1654,11 @@ body {
   display: flex;
   -moz-column-gap: 5rem;
        column-gap: 5rem;
+}
+
+.section__10 {
+  display: flex;
+  min-width: 100%;
 }
 
 .ranking__container-cards {
@@ -1753,4 +1757,9 @@ body {
   justify-content: center;
   text-align: center;
   align-self: center;
+}
+
+.wrapper__ranking {
+  min-width: 100%;
+  min-width: 375px;
 }/*# sourceMappingURL=nft.style.css.map */

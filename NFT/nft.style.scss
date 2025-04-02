@@ -1699,7 +1699,6 @@ opacity: 0.8;
     justify-content: center;
     font-size: rem(21);
     align-items: center;
-    padding-block-end: 5px;
     width: 100%;
     max-width: 1050px;
     white-space: nowrap;
@@ -1898,7 +1897,7 @@ color: var(--color-number);
 
 .header__ranking {
 
-margin-block-end: rem(180);
+margin-block-end: rem(110);
 }
 
 
@@ -1965,12 +1964,16 @@ margin-block-end: rem(180);
 
 
 .section__10 {
+    display: flex;
+    min-width: 100%;
 }
 .ranking__container-cards {
     min-width: 100%;
     display: flex;
     justify-content: center;
     padding-block-end: rem(40);
+
+
 
 }
 .ranking__body-cards {
@@ -2083,4 +2086,9 @@ margin-block-end: rem(180);
    text-align: center;
    align-self: center;
  
+}
+
+.wrapper__ranking {
+    min-width: 100%;
+    min-width: 375px;
 }

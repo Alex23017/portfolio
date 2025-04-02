@@ -72,4 +72,25 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-    
+function removeLastWordFromRankingTitle() {
+    document.querySelectorAll(".ranking__title h3").forEach(h3 => {
+        let originalText = h3.getAttribute("data-original-text"); // Получаем оригинальный текст
+
+        if (!originalText) {
+            h3.setAttribute("data-original-text", h3.textContent.trim()); // Сохраняем оригинальный текст
+            originalText = h3.textContent.trim();
+        }
+
+        let words = originalText.split(" ");
+
+        if (words.length > 1 && window.matchMedia("(max-width: 970px)").matches) {
+            h3.textContent = words.slice(0, -1).join(" "); // Удаляем только последнее слово
+        } else {
+            h3.textContent = originalText; // Восстанавливаем оригинальный текст, если экран > 970px
+        }
+    });
+}
+
+// Запуск при загрузке и изменении размера окна
+window.addEventListener("DOMContentLoaded", removeLastWordFromRankingTitle);
+window.addEventListener("resize", removeLastWordFromRankingTitle);
