@@ -94,3 +94,25 @@ function removeLastWordFromRankingTitle() {
 // Запуск при загрузке и изменении размера окна
 window.addEventListener("DOMContentLoaded", removeLastWordFromRankingTitle);
 window.addEventListener("resize", removeLastWordFromRankingTitle);
+
+const burgerMenu = document.getElementById('burger-menu');
+const menu = document.getElementById('menu');
+const header = document.querySelector('header'); // Получаем header
+const headerBody = document.querySelector('.header__body'); // Получаем header__body
+
+burgerMenu.addEventListener('click', function () {
+    menu.classList.toggle('open'); 
+    header.classList.toggle('open'); // Добавляем open к header
+    headerBody.classList.toggle('open'); // Добавляем open к header__body
+    burgerMenu.classList.toggle('open'); 
+});
+
+// Закрытие при увеличении экрана
+window.addEventListener('resize', function () {
+    if (window.innerWidth > 970) {
+        menu.classList.remove('open');
+        header.classList.remove('open'); // Убираем open у header
+        headerBody.classList.remove('open'); // Убираем open у header__body
+        burgerMenu.classList.remove('open');
+    }
+});

@@ -246,6 +246,42 @@ body {
   font-size: 1.75rem;
 }
 
+.burger__menu {
+  display: none;
+  position: relative;
+  width: 32px;
+  height: 2px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.burger__menu::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 2px;
+  background-color: white;
+  top: 8px;
+  width: 80%;
+  left: 0;
+}
+
+.burger__menu::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 2px;
+  background-color: white;
+  bottom: 8px;
+  width: 80%;
+  left: 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
 .header__body {
   padding-inline: 3.125rem;
   display: flex;
@@ -726,7 +762,7 @@ body {
   max-width: 1050px;
   justify-content: center;
   align-items: center;
-  row-gap: 1.25rem;
+  row-gap: 20px;
 }
 
 .discover__body-title {
@@ -1225,6 +1261,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-block-start: 5.625rem;
 }
 
 .section__create {
@@ -1344,6 +1381,7 @@ body {
 
 .section__animakid-1 {
   position: relative;
+  padding-block-start: 6.25rem;
 }
 
 .Animakid__card-img {
@@ -1459,6 +1497,9 @@ body {
   display: flex;
   justify-content: center;
   min-width: 100%;
+}
+.owned__container .owned__menu {
+  padding-block-end: 0.3125rem;
 }
 
 .owner__body {
@@ -1632,6 +1673,10 @@ body {
 
 .header__ranking {
   margin-block-end: 6.875rem;
+}
+
+.ranking__body-title {
+  padding-block-start: 5rem;
 }
 
 .artist__container {

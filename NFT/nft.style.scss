@@ -200,6 +200,46 @@ body {
 
 
 // ====================HEADER NAV=======================
+// ==================================
+.burger__menu {
+    display: none;
+    position: relative;
+    width: 32px;
+    height: 2px;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+.burger__menu::before {
+    content:'';
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background-color: white;
+    top: 8px;
+    width: 80%;
+    left: 0;
+}
+.burger__menu::after {
+content:'';
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background-color: white;
+    bottom: 8px;
+    width: 80%;
+    left: 0;
+}
+
+// ====================================
+    .nav {
+    display: flex;
+    align-items: center;
+}
+
+
+
 
 
 
@@ -251,7 +291,13 @@ body {
     align-items: center;
     white-space: nowrap;
     line-height: 36px;
+    
 }
+
+
+
+
+
 
 .nav__link {
     position: relative;
@@ -816,7 +862,8 @@ body {
     max-width: 1050px;
     justify-content: center;
     align-items: center;
-    row-gap: rem(20);
+    row-gap: 20px;
+    
     
 }
 
@@ -1441,6 +1488,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-block-start: rem(90);
 }
 
 .section__create {
@@ -1562,6 +1610,7 @@ opacity: 0.8;
 
 .section__animakid-1 {
     position: relative;
+    padding-block-start: rem(100);
 }
 
 
@@ -1701,7 +1750,9 @@ opacity: 0.8;
     justify-content: center;
     min-width: 100%;
 
-
+    .owned__menu{
+        padding-block-end: rem(5);
+    }
 
 }
 .owner__body {
@@ -1935,7 +1986,9 @@ color: var(--color-number);
 
 margin-block-end: rem(110);
 }
-
+.ranking__body-title {
+    padding-block-start: rem(80);
+}
 
 .section__artist {
 }
